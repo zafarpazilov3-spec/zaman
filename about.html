@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>О нас — ZAMAN Чайхана</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400;1,700&family=Noto+Sans:wght@300;400;500;600;700;800&family=Marck+Script&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .about-container {
+      max-width: 840px;
+      margin: 1.5rem auto 3.5rem;
+      padding: 0 1rem;
+    }
+
+    .about-card {
+      background: #FFFDF9;
+      border: 10px solid #2D180C;
+      outline: 2px solid rgba(215, 176, 120, 0.55);
+      border-radius: 18px;
+      box-shadow: 
+        0 35px 80px -15px rgba(0, 0, 0, 0.85),
+        0 15px 30px -5px rgba(0, 0, 0, 0.6);
+      padding: 2.5rem 2.2rem 2.8rem;
+      position: relative;
+    }
+
+    .about-section-block {
+      margin-bottom: 2rem;
+    }
+
+    .about-section-block:last-of-type {
+      margin-bottom: 1.5rem;
+    }
+
+    .about-heading {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.45rem;
+      font-weight: 800;
+      color: #1A0D05;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      border-bottom: 1.5px solid rgba(166, 106, 42, 0.25);
+      padding-bottom: 0.5rem;
+      margin-bottom: 0.8rem;
+    }
+
+    .about-heading-icon {
+      font-size: 1.4rem;
+    }
+
+    .about-text {
+      color: #4A3222;
+      font-size: 1.05rem;
+      line-height: 1.8;
+      font-weight: 400;
+    }
+
+    .about-text strong {
+      color: #1A0D05;
+      font-weight: 700;
+    }
+
+    .about-actions {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 640px) {
+      .about-card {
+        border-width: 5px;
+        padding: 1.6rem 1.1rem 2rem;
+      }
+      .about-heading {
+        font-size: 1.25rem;
+      }
+      .about-text {
+        font-size: 0.95rem;
+        line-height: 1.65;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand-wrapper" href="index.html">
+        <img src="images/logo_emblem.png" class="brand-logo-img" alt="ZAMAN">
+        <div class="brand-text">
+          <span class="brand">ZAMAN</span>
+          <span class="brand-sub">Чайхана &bull; Вкус Времени</span>
+        </div>
+      </a>
+      <div class="header-links">
+        <a class="header-link-btn" href="index.html">📖 Меню блюд</a>
+        <a class="header-link-btn" href="qr.html">📱 QR-код</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="about-container">
+    <a class="back-btn" href="index.html">← Вернуться к книге меню</a>
+
+    <!-- Radiant Hero Header (Gold and Cream on Dark Brown Background) -->
+    <header class="category-hero">
+      <img src="images/logo_emblem.png" alt="Эмблема ZAMAN" style="width:80px; height:80px; margin:0 auto 1rem; display:block; filter: drop-shadow(0 4px 18px rgba(245,199,114,0.7));">
+      <h1 class="font-serif">О ЧАЙХАНЕ ZAMAN</h1>
+      <blockquote class="cover-quote">«Больше чем еда — это традиция»</blockquote>
+    </header>
+
+    <div class="decorative-line"></div>
+
+    <!-- Authentic Story Card -->
+    <article class="about-card">
+      
+      <div style="text-align:center; margin-bottom: 1.8rem;">
+        <span style="font-family:'Playfair Display', serif; font-size: 0.95rem; letter-spacing: 3px; color: var(--gold-dark); font-weight: 800; text-transform: uppercase;">
+          📜 ВКУС ВРЕМЕНИ &bull; БОЛЬШЕ ЧЕМ ЕДА
+        </span>
+      </div>
+
+      <section class="about-section-block">
+        <h2 class="about-heading">
+          <span class="about-heading-icon">🏛️</span> <span>Наша история</span>
+        </h2>
+        <p class="about-text">
+          Мы открыли двери чайханы <strong>«ZAMAN»</strong> ради сохранения подлинного восточного гостеприимства и старинных рецептов, передающихся из поколения в поколение. Слово «Заман» переводится как <em>«Время»</em> или <em>«Эпоха»</em> — для нас это дань уважения вековым кулинарным традициям Средней Азии и Востока.
+        </p>
+      </section>
+
+      <section class="about-section-block">
+        <h2 class="about-heading">
+          <span class="about-heading-icon">🔥</span> <span>Наша кухня и мангал</span>
+        </h2>
+        <p class="about-text">
+          Мы используем только отборное свежее халяльное мясо, ферганский рис сорта Лазер, душистую зиру, кориандр и натуральные овощи от проверенных поставщиков. Каждый шашлык и люля-кебаб готовится исключительно на открытом огне и натуральных берёзовых углях опытными мастерами мангала.
+        </p>
+      </section>
+
+      <section class="about-section-block">
+        <h2 class="about-heading">
+          <span class="about-heading-icon">🫖</span> <span>Традиции чайного дастархана</span>
+        </h2>
+        <p class="about-text">
+          Настоящий восточный дастархан немыслим без ароматного чая в расписном восточном чайнике, свежей выпечки, восточных сладостей, домашнего лимона и навата. В «ZAMAN» вас всегда ждут душевные неспешные беседы, домашний уют и вкус, проверенный временем.
+        </p>
+      </section>
+
+      <!-- Welcome Quote -->
+      <div style="text-align: center; margin: 2rem auto 1.5rem; padding-top: 1.5rem; border-top: 1px dashed rgba(166, 106, 42, 0.35);">
+        <div style="font-size: 1.6rem; color: var(--gold); margin-bottom: 0.35rem;">❦</div>
+        <div style="font-family: 'Marck Script', cursive; font-size: 1.5rem; color: var(--gold-dark);">
+          «Добро пожаловать в чайхану ZAMAN!»
+        </div>
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="about-actions">
+        <a href="index.html" class="btn-open-menu-sheet" style="font-size: 1.02rem; padding: 0.75rem 1.8rem; text-decoration: none;">
+          <span>📖 Смотреть меню блюд</span>
+          <span class="btn-arrow-icon">➔</span>
+        </a>
+        <a href="qr.html" class="tab-btn active" style="font-size: 0.95rem; padding: 0.75rem 1.6rem; text-decoration: none;">
+          <span>📱 Открыть QR-код</span>
+        </a>
+      </div>
+
+    </article>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" id="contacts">
+    <div class="footer-inner">
+      <div class="brand-block">
+        <strong>ZAMAN</strong><br>
+        <span class="muted">Чайхана &bull; Традиции &bull; Вкус Времени</span>
+      </div>
+
+      <div class="contacts">
+        📍 <strong>Адрес:</strong> Тумонбой Байзакова 137<br>
+        📞 <strong>Телефон:</strong> <a href="tel:+996556614444">+996 556 614 444</a><br>
+        📸 <strong>Instagram:</strong> <a href="https://instagram.com/zaman_chaihana" target="_blank">@zaman_chaıhana</a><br>
+        📱 <strong>QR-код:</strong> <a href="qr.html" style="color:var(--gold-bright); font-weight:700;">Открыть QR-код для столиков</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

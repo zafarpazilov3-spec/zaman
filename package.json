@@ -1,0 +1,15 @@
+{
+  "name": "zaman-menu",
+  "version": "1.0.0",
+  "description": "ZAMAN Chaihana - Online QR Menu & Admin Panel",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": ["restaurant", "menu", "qr-menu", "chaihana", "zaman"],
+  "author": "ZAMAN",
+  "license": "ISC",
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}

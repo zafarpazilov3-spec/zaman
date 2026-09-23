@@ -1,0 +1,1899 @@
+{
+    "salads":  {
+                   "title":  "САЛАТЫ",
+                   "titleEn":  "SALADS",
+                   "href":  "salads.html",
+                   "thumb":  "images/dishes/salat_cezar_kuritsa.jpg",
+                   "dishes":  [
+                                  {
+                                      "id":  "salads-1",
+                                      "name":  "Цезарь с курицей",
+                                      "available":  true,
+                                      "price":  270,
+                                      "image":  "images/uploads/dish_1790073397214.jpg",
+                                      "desc":  "айсберг, соус цезарь , помидор черри , сыр пармезан , гренки , пашот , куриное филе."
+                                  },
+                                  {
+                                      "id":  "salads-2",
+                                      "name":  "Цезарь с креветками",
+                                      "available":  true,
+                                      "price":  350,
+                                      "image":  "images/uploads/dish_1790073814070.jpg",
+                                      "desc":  "айсберг , соус цезарь , помидор черри , сыр пармезан , гренки , пашот , креветки."
+                                  },
+                                  {
+                                      "id":  "salads-3",
+                                      "name":  "Тайский салат",
+                                      "available":  true,
+                                      "price":  365,
+                                      "image":  "images/uploads/dish_1790074229831.jpg",
+                                      "desc":  "говядина , болгарский перец , красный лук , пачатки , микс салат , помидор , огурец , острый соус , кунжут."
+                                  },
+                                  {
+                                      "id":  "salads-4",
+                                      "name":  "Греческий салат",
+                                      "available":  true,
+                                      "price":  280,
+                                      "image":  "images/uploads/dish_1790074276829.jpg",
+                                      "desc":  "Помидор, огурец, микс перцев,  микс салат, оливки, маслины, сыр фета, соус греческий."
+                                  },
+                                  {
+                                      "id":  "salads-5",
+                                      "name":  "Гнездо глухаря",
+                                      "available":  true,
+                                      "price":  250,
+                                      "image":  "images/uploads/dish_1790074335583.jpg",
+                                      "desc":  "Запеченное куриное филе, свежий огурец, яйца, картошка пай, майонез."
+                                  },
+                                  {
+                                      "id":  "salads-6",
+                                      "name":  "Хрустящие баклажаны с курицей",
+                                      "available":  true,
+                                      "price":  300,
+                                      "image":  "images/uploads/dish_1790074374670.jpg",
+                                      "desc":  "Баклажан, черри помидор, картофель по деревенский, куриное филе, кисло сладкий соус, кинза, кунжут."
+                                  },
+                                  {
+                                      "id":  "salads-7",
+                                      "name":  "Оливье с курицей",
+                                      "available":  true,
+                                      "price":  250,
+                                      "image":  "images/uploads/dish_1790074427649.jpg",
+                                      "desc":  "Картошка, морковка, яйца, горох, салонный огурец, куриное филе, майонез."
+                                  },
+                                  {
+                                      "id":  "salads-8",
+                                      "name":  "Мясной острый",
+                                      "available":  true,
+                                      "price":  280,
+                                      "image":  "images/uploads/dish_1790074468439.jpg",
+                                      "desc":  "Чили перец, микс перцов, помидор, огурец, говядина, кунжут."
+                                  },
+                                  {
+                                      "id":  "salads-9",
+                                      "name":  "Оливье с креветками",
+                                      "available":  true,
+                                      "price":  300,
+                                      "image":  "images/uploads/dish_1790074602391.jpg",
+                                      "desc":  "Картошка, морковка, яйца, горох, салонный огурец, креветки, майонез."
+                                  },
+                                  {
+                                      "id":  "salads-10",
+                                      "name":  "Сливочный салат с курицей и грибами",
+                                      "available":  true,
+                                      "price":  290,
+                                      "image":  "images/uploads/dish_1790074651239.jpg",
+                                      "desc":  "Куриное филе, грибы, сливки, помидор, огурец, микс салат."
+                                  },
+                                  {
+                                      "id":  "salads-11",
+                                      "name":  "Салат с казы",
+                                      "available":  true,
+                                      "price":  370,
+                                      "image":  "images/uploads/dish_1790074686806.jpg",
+                                      "desc":  "Казы, микс салат, картошка по  деревенский, черри помидор, маринованный огурец, микс перцов."
+                                  },
+                                  {
+                                      "id":  "salads-12",
+                                      "name":  "Салат с лососем",
+                                      "available":  true,
+                                      "price":  380,
+                                      "image":  "images/uploads/dish_1790074722489.jpg",
+                                      "desc":  "Лосось, помидор, огурец, авокадо, микс салат, соус."
+                                  },
+                                  {
+                                      "id":  "salads-13",
+                                      "name":  "Хрустящие баклажаны с креветками",
+                                      "available":  true,
+                                      "price":  350,
+                                      "image":  "images/uploads/dish_1790074784949.jpg",
+                                      "desc":  "Баклажан, черри помидор, картофель по деревенский, креветки, кисло сладкий соус, кинза, сыр фета, кунжут."
+                                  },
+                                  {
+                                      "id":  "salads-14",
+                                      "name":  "Салат с манго и креветками",
+                                      "available":  true,
+                                      "price":  410,
+                                      "image":  "images/uploads/dish_1790074819269.jpg",
+                                      "desc":  "Креветки, манго, манго соус, микс салат, огурец, помидор."
+                                  },
+                                  {
+                                      "id":  "salads-15",
+                                      "name":  "Салат с сырными шариками",
+                                      "available":  true,
+                                      "price":  360,
+                                      "image":  "images/uploads/dish_1790074852767.jpg",
+                                      "desc":  "Микс салат, сырные шарики, ягодный соус, помидор черри, огурец."
+                                  },
+                                  {
+                                      "id":  "salads-16",
+                                      "name":  "Мужской каприз",
+                                      "available":  true,
+                                      "price":  340,
+                                      "image":  "images/uploads/dish_1790074919571.jpg",
+                                      "desc":  "Говядина, курица, колбаса, сухарик, пармезан, огурец свежий, майонез, яйца."
+                                  },
+                                  {
+                                      "id":  "salads-17",
+                                      "name":  "Салат с курицей и цветной капустой",
+                                      "available":  true,
+                                      "price":  320,
+                                      "image":  "images/uploads/dish_1790074964615.jpg",
+                                      "desc":  "Куриное филе, цветная капуста, черри помидор, шпинат, кисло-сладкий соус."
+                                  },
+                                  {
+                                      "id":  "salads-18",
+                                      "name":  "Говядина под медово-горчичным соусом",
+                                      "available":  true,
+                                      "price":  350,
+                                      "image":  "images/uploads/dish_1790075014419.jpg",
+                                      "desc":  "Говядина, картошка по деревенский, шпинат, маринованный огурец, красный лук, медово-горчичный соус."
+                                  },
+                                  {
+                                      "id":  "salads-20",
+                                      "name":  "Салат Ачуу-чук",
+                                      "available":  true,
+                                      "price":  120,
+                                      "image":  "images/uploads/dish_1790075088541.jpg",
+                                      "desc":  "Традиционный острый салат из помидоров с тонким луком и перцем чили"
+                                  },
+                                  {
+                                      "id":  "salads-6035",
+                                      "name":  "Fanta (стекло)",
+                                      "price":  100,
+                                      "desc":  "",
+                                      "image":  "images/salads/dish-1.jpg",
+                                      "available":  true
+                                  },
+                                  {
+                                      "id":  "salads-3051",
+                                      "name":  "Rc-Cola",
+                                      "price":  100,
+                                      "desc":  "",
+                                      "image":  "images/salads/dish-1.jpg",
+                                      "available":  true
+                                  },
+                                  {
+                                      "id":  "salads-6307",
+                                      "name":  "Mirinda (Жел-Баночка)",
+                                      "price":  120,
+                                      "desc":  "",
+                                      "image":  "images/salads/dish-1.jpg",
+                                      "available":  true
+                                  }
+                              ]
+               },
+    "soups":  {
+                  "title":  "СУПЫ",
+                  "titleEn":  "SOUPS",
+                  "href":  "soups.html",
+                  "thumb":  "images/dishes/sup_borsh.jpg",
+                  "dishes":  [
+                                 {
+                                     "id":  "soups-1",
+                                     "name":  "Тайский суп с креветками",
+                                     "available":  true,
+                                     "price":  400,
+                                     "image":  "images/uploads/dish_1790075284512.jpg",
+                                     "desc":  "куриный бульон, паста Том ям, кокосовая молоко, зелень, рис отварной, креветки, помидоры Черри."
+                                 },
+                                 {
+                                     "id":  "soups-2",
+                                     "name":  "Борщ классический",
+                                     "available":  true,
+                                     "price":  320,
+                                     "image":  "images/uploads/dish_1790075328184.jpg",
+                                     "desc":  "говядина, свёкла, морковь, лук репчатый, томатной пасты, бульон наваристый, чёрный хлеб, лук зелёный, сметана, зелень."
+                                 },
+                                 {
+                                     "id":  "soups-3",
+                                     "name":  "Сырный суп с курицей",
+                                     "available":  true,
+                                     "price":  280,
+                                     "image":  "images/uploads/dish_1790075380730.jpg",
+                                     "desc":  "два вида сыра картошка морковь, гренки."
+                                 },
+                                 {
+                                     "id":  "soups-4",
+                                     "name":  "Пельмени Том Ям",
+                                     "available":  true,
+                                     "price":  310,
+                                     "image":  "images/uploads/dish_1790075450069.jpg",
+                                     "desc":  "бульон Том ям, грибы, черри, пельмени с говядины, капуста кимчи."
+                                 },
+                                 {
+                                     "id":  "soups-5",
+                                     "name":  "Пельмени из говядины с бульоном",
+                                     "available":  true,
+                                     "price":  250,
+                                     "image":  "images/uploads/dish_1790075576096.jpg",
+                                     "desc":  "Пельмени из говядины, наваристый бульон, сметана, красный лук."
+                                 },
+                                 {
+                                     "id":  "soups-6",
+                                     "name":  "рамен с курицей",
+                                     "available":  true,
+                                     "price":  320,
+                                     "image":  "images/uploads/dish_1790097553092.jpg",
+                                     "desc":  "лапша, сливочно острый бульон, сыр чеддер, куриное филе, опята, кимчи."
+                                 },
+                                 {
+                                     "id":  "soups-8987",
+                                     "name":  "рамен с говядиной",
+                                     "price":  370,
+                                     "desc":  "лапша, сливочно острый бульон, сыр чеддер, говядина , опята,кимчи.",
+                                     "image":  "images/uploads/dish_1790097608951.jpg",
+                                     "available":  true
+                                 },
+                                 {
+                                     "id":  "soups-7",
+                                     "name":  "Шурпа из баранины",
+                                     "available":  true,
+                                     "price":  320,
+                                     "image":  "images/uploads/dish_1790099303662.jpg",
+                                     "desc":  "наваристый бульон, мясо баранина, картошка морковь, красный лук, зелень."
+                                 },
+                                 {
+                                     "id":  "soups-9",
+                                     "name":  "Шурпа из говядины",
+                                     "available":  true,
+                                     "price":  320,
+                                     "image":  "images/uploads/dish_1790099219917.jpg",
+                                     "desc":  "наваристый бульон, мясо говядина, картошка, морковь, красный лук, зелень."
+                                 },
+                                 {
+                                     "id":  "soups-8",
+                                     "name":  "Чучвара",
+                                     "available":  true,
+                                     "price":  270,
+                                     "image":  "images/uploads/dish_1790099428298.jpg",
+                                     "desc":  "говядина, морковь ,лук, бульон наваристый ,сметана, зелень"
+                                 },
+                                 {
+                                     "id":  "soups-10",
+                                     "name":  "Чечевичный суп с тыквой",
+                                     "available":  true,
+                                     "price":  260,
+                                     "image":  "images/uploads/dish_1790099479228.jpg",
+                                     "desc":  "чечевица, морковь, тыква, лук репчатый, гренки, лимон."
+                                 },
+                                 {
+                                     "id":  "soups-11",
+                                     "name":  "Мясо по-казахски",
+                                     "available":  true,
+                                     "price":  260,
+                                     "image":  "images/uploads/dish_1790099526128.jpg",
+                                     "desc":  "говядина, тесто, наваристый бульон, казы, зелень, сметана."
+                                 },
+                                 {
+                                     "id":  "soups-12",
+                                     "name":  "Мастава из говядины",
+                                     "available":  true,
+                                     "price":  270,
+                                     "image":  "images/uploads/dish_1790099582983.jpg",
+                                     "desc":  "говядина, морковь, болгарский перец, лук репчатый, нут, рис, сметана, красный лук, зелень."
+                                 },
+                                 {
+                                     "id":  "soups-13",
+                                     "name":  "Суп-пюре грибной",
+                                     "available":  true,
+                                     "price":  320,
+                                     "image":  "images/uploads/dish_1790099624150.jpg",
+                                     "desc":  "грибы репчатый лук, картошка, сливки, гренки."
+                                 }
+                             ]
+              },
+    "hot":  {
+                "title":  "ГОРЯЧИЕ БЛЮДА",
+                "titleEn":  "HOT DISHES",
+                "href":  "hot.html",
+                "thumb":  "images/dishes/hot_kazan_kebab.jpg",
+                "dishes":  [
+                               {
+                                   "id":  "hot-1",
+                                   "name":  "Куриные котлеты с картофельным пюре",
+                                   "available":  true,
+                                   "price":  410,
+                                   "image":  "images/uploads/dish_1790099818028.jpg",
+                                   "desc":  "куриные котлеты, нежное пюре, грибной соус, микс салат ."
+                               },
+                               {
+                                   "id":  "hot-2",
+                                   "name":  "Куриное филе в сливочном соусе",
+                                   "available":  true,
+                                   "price":  420,
+                                   "image":  "images/uploads/dish_1790099884468.jpg",
+                                   "desc":  "куриное филе, грибы, сливочный соус, рис отварной."
+                               },
+                               {
+                                   "id":  "hot-3",
+                                   "name":  "Говядина по-тайски",
+                                   "available":  true,
+                                   "price":  540,
+                                   "image":  "images/uploads/dish_1790099947774.jpg",
+                                   "desc":  "говядина, микс перцев, помидор, пачатки, соус, рис отварной."
+                               },
+                               {
+                                   "id":  "hot-4",
+                                   "name":  "Бефстроганов",
+                                   "available":  true,
+                                   "price":  450,
+                                   "image":  "images/uploads/dish_1790100014474.jpg",
+                                   "desc":  "говядина, грибы, соленый огурец, сливки, нежное картофельное пюре."
+                               },
+                               {
+                                   "id":  "hot-5",
+                                   "name":  "Картошка с мясом по-домашнему",
+                                   "available":  true,
+                                   "price":  470,
+                                   "image":  "images/uploads/dish_1790100067672.jpg",
+                                   "desc":  "нежная говядина, картофель, лук, соленый огурец."
+                               },
+                               {
+                                   "id":  "hot-6",
+                                   "name":  "Говяжьи котлеты с грибным соусом",
+                                   "available":  true,
+                                   "price":  540,
+                                   "image":  "images/uploads/dish_1790100117273.jpg",
+                                   "desc":  "говяжий фарш, два вида сыра, грибной соус, картошка по домашнему, салат коул слоу."
+                               },
+                               {
+                                   "id":  "hot-7",
+                                   "name":  "Запеченная картошка с говядиной",
+                                   "available":  true,
+                                   "price":  650,
+                                   "image":  "images/uploads/dish_1790100210984.jpg",
+                                   "desc":  "картошка запеченная, сыр, томленная говядина, соус от шефа, свежий салат."
+                               },
+                               {
+                                   "id":  "hot-8",
+                                   "name":  "Куриные медальоны в сырном соусе",
+                                   "available":  true,
+                                   "price":  470,
+                                   "image":  "images/uploads/dish_1790100279844.jpg",
+                                   "desc":  "куриный фарш, сливочно сырный соус, картофель по домашнему, микс салат."
+                               },
+                               {
+                                   "id":  "hot-9",
+                                   "name":  "Кесадилья с курицей",
+                                   "available":  true,
+                                   "price":  430,
+                                   "image":  "images/uploads/dish_1790100364867.jpg",
+                                   "desc":  "куриное филе, грибы, лук репчатый, кукуруза сладкая, помидор, два вида сыра, фри, соус."
+                               },
+                               {
+                                   "id":  "hot-10",
+                                   "name":  "Бон филе с пюре",
+                                   "available":  true,
+                                   "price":  610,
+                                   "image":  "images/uploads/dish_1790100415919.jpg",
+                                   "desc":  "бон филе, нежное картофельное пюре, сливочно грибной соус."
+                               },
+                               {
+                                   "id":  "hot-11",
+                                   "name":  "Курица Том Ям",
+                                   "available":  true,
+                                   "price":  470,
+                                   "image":  "images/uploads/dish_1790100494320.jpg",
+                                   "desc":  "куриное бедро, помидор, грибы, кокосово сливочный соус, рис отварной, черри помидор, лимон."
+                               },
+                               {
+                                   "id":  "hot-12",
+                                   "name":  "Куриная голень с фри",
+                                   "available":  true,
+                                   "price":  450,
+                                   "image":  "images/uploads/dish_1790100608769.jpg",
+                                   "desc":  "голень куриный, болгарский перец, томаты, лук, фри."
+                               },
+                               {
+                                   "id":  "hot-13",
+                                   "name":  "Томленые говяжьи щечки",
+                                   "available":  true,
+                                   "price":  470,
+                                   "image":  "images/uploads/dish_1790100663288.jpg",
+                                   "desc":  "говяжья щека, сливочный соус грибы шампиньоны, нежное пюре, соус песто."
+                               },
+                               {
+                                   "id":  "hot-14",
+                                   "name":  "Строганов из курицы",
+                                   "available":  true,
+                                   "price":  470,
+                                   "image":  "images/uploads/dish_1790100728262.jpg",
+                                   "desc":  "куриное филе, сливочно грибной соус, картошка жаренная, рис отварной, помидор черри, огурец мика салат"
+                               },
+                               {
+                                   "id":  "hot-15",
+                                   "name":  "Доппи",
+                                   "available":  true,
+                                   "price":  550,
+                                   "image":  "images/uploads/dish_1790100818749.jpg",
+                                   "desc":  "нежная говядина, лук репчатый, специи, лепешка."
+                               },
+                               {
+                                   "id":  "hot-16",
+                                   "name":  "Жаровня с говядиной",
+                                   "available":  true,
+                                   "price":  510,
+                                   "image":  "images/uploads/dish_1790103430560.jpg",
+                                   "desc":  "говядина, болгарский перец, лук, помидоры, фри, баклажан, лук красный, лимон."
+                               },
+                               {
+                                   "id":  "hot-17",
+                                   "name":  "Казан кебаб из говядины \\ баранины",
+                                   "available":  true,
+                                   "price":  620,
+                                   "image":  "images/uploads/dish_1790103517159.jpg",
+                                   "desc":  "говядина томленая, картошка, красный лук."
+                               },
+                               {
+                                   "id":  "hot-18",
+                                   "name":  "Джизз",
+                                   "available":  true,
+                                   "price":  560,
+                                   "image":  "images/uploads/dish_1790103559707.jpg",
+                                   "desc":  "говядина, красный лук, картофель, специи, зелень."
+                               },
+                               {
+                                   "id":  "hot-19",
+                                   "name":  "Фри с мясом",
+                                   "available":  true,
+                                   "price":  620,
+                                   "image":  "images/uploads/dish_1790103624770.jpg",
+                                   "desc":  "говядина лук репчатый, картофель фри, лук красный, огурец, помидоры черри, зелень."
+                               },
+                               {
+                                   "id":  "hot-20",
+                                   "name":  "Плов Девзира",
+                                   "available":  true,
+                                   "price":  340,
+                                   "image":  "images/uploads/dish_1790103673368.jpg",
+                                   "desc":  "говядина, жёлтая морковь, рис девзра, яйцо."
+                               },
+                               {
+                                   "id":  "hot-21",
+                                   "name":  "Плов Ташкентский",
+                                   "available":  true,
+                                   "price":  350,
+                                   "image":  "images/uploads/dish_1790103718081.jpg",
+                                   "desc":  "говядина, два вида моркови, нут, изюм, рис лазер, яйцо."
+                               },
+                               {
+                                   "id":  "hot-22",
+                                   "name":  "Султан плов",
+                                   "available":  true,
+                                   "price":  370,
+                                   "image":  "images/uploads/dish_1790110117882.jpg",
+                                   "desc":  "говядина , два вида моркови , нут , изюм , яйцо , казы."
+                               },
+                               {
+                                   "id":  "hot-24",
+                                   "name":  "Казан кебаб по-уйгурски",
+                                   "available":  true,
+                                   "price":  490,
+                                   "image":  "images/uploads/dish_1790110217403.jpg",
+                                   "desc":  "говядина, репчатый лук, помидор, специи, огурец, красный лук, зелень."
+                               },
+                               {
+                                   "id":  "hot-25",
+                                   "name":  "Гоша сай из баранины",
+                                   "available":  true,
+                                   "price":  580,
+                                   "image":  "images/uploads/dish_1790110260066.jpg",
+                                   "desc":  "баранина мякоть, болгарский перец, пекинская капуста, лук репчатый, баклажан, томатная паста, специи, тесто."
+                               },
+                               {
+                                   "id":  "hot-26",
+                                   "name":  "Гуйру лагман",
+                                   "available":  true,
+                                   "price":  370,
+                                   "image":  "images/uploads/dish_1790110312663.jpg",
+                                   "desc":  "баранина мякоть, болгарский перец лук репчатый пекинская капуста, томатная паста, специи, тесто."
+                               },
+                               {
+                                   "id":  "hot-27",
+                                   "name":  "Лагман уйгурский",
+                                   "available":  true,
+                                   "price":  370,
+                                   "image":  "images/uploads/dish_1790110362419.jpg",
+                                   "desc":  "баранина мякоть, болгарский перец, пекинская капуста, лук репчатый, тесто, томатная паста, специи."
+                               },
+                               {
+                                   "id":  "hot-28",
+                                   "name":  "Босо лагман",
+                                   "available":  true,
+                                   "price":  350,
+                                   "image":  "images/uploads/dish_1790110513402.jpg",
+                                   "desc":  "баранина мякоть болгарский перец, лук репчатый, огурец свежий, баклажан, тесто, специя, зелень,"
+                               },
+                               {
+                                   "id":  "hot-29",
+                                   "name":  "Гуляш из говядины",
+                                   "available":  true,
+                                   "price":  340,
+                                   "image":  "images/uploads/dish_1790113083677.jpg",
+                                   "desc":  "говядина, рис отварной, гречка, картофельное пюре, фри, огурец, помидоры, зелень."
+                               },
+                               {
+                                   "id":  "hot-30",
+                                   "name":  "Бешбармак с ребром",
+                                   "available":  true,
+                                   "price":  410,
+                                   "image":  "images/uploads/dish_1790113165380.jpg",
+                                   "desc":  "тесто бульон, казы,  картошка, морковь, конина."
+                               },
+                               {
+                                   "id":  "hot-31",
+                                   "name":  "Бифштекс",
+                                   "available":  true,
+                                   "price":  340,
+                                   "image":  "images/uploads/dish_1790114226370.jpg",
+                                   "desc":  "котлета , рис отварной , гречка , картофельное пюре , фри , огурец , помидоры , зелень."
+                               },
+                               {
+                                   "id":  "hot-32",
+                                   "name":  "Манты",
+                                   "available":  true,
+                                   "price":  350,
+                                   "image":  "images/uploads/dish_1790114320050.jpg",
+                                   "desc":  "тесто, говядина, говяжий жир, лук, специи."
+                               },
+                               {
+                                   "id":  "hot-33",
+                                   "name":  "Манты жареные",
+                                   "available":  true,
+                                   "price":  380,
+                                   "image":  "images/uploads/dish_1790114375810.jpg",
+                                   "desc":  "тесто, говядина, говяжий жир, лук, специи."
+                               },
+                               {
+                                   "id":  "hot-34",
+                                   "name":  "Манты уйгурские",
+                                   "available":  true,
+                                   "price":  410,
+                                   "image":  "images/uploads/dish_1790114429961.jpg",
+                                   "desc":  "тесто, говядина, говяжий жир, лук, специи."
+                               }
+                           ]
+            },
+    "combos":  {
+                   "title":  "СЕТЫ И КОМБО",
+                   "titleEn":  "SETS \u0026 COMBO",
+                   "href":  "combos.html",
+                   "thumb":  "images/dishes/rolls_set_kholodniy.jpg",
+                   "dishes":  [
+                                  {
+                                      "id":  "combos-4",
+                                      "name":  "Комбо ZAMAN Бургер Сет",
+                                      "available":  true,
+                                      "price":  520,
+                                      "image":  "images/dishes/burger_zaman.jpg",
+                                      "desc":  "Фирменный сочный бургер ZAMAN на булочке бриошь, хрустящий картофель фри и прохладительный напиток"
+                                  },
+                                  {
+                                      "id":  "combos-5",
+                                      "name":  "Комбо Шаурма XXL Сет",
+                                      "available":  true,
+                                      "price":  390,
+                                      "image":  "images/dishes/burger_shaurma_kebab.jpg",
+                                      "desc":  "Большая шаурма XXL с сочным мясом, порция картофеля фри, авторский чесночный соус и напиток"
+                                  },
+                                  {
+                                      "id":  "combos-6",
+                                      "name":  "Мясной Сет Ассорти ZAMAN",
+                                      "available":  true,
+                                      "price":  1490,
+                                      "image":  "images/dishes/grill_shashlyk_baranina.jpg",
+                                      "desc":  "Большое праздничное ассорти на компанию: шашлык из баранины, шашлык из куриного филе, люля-кебаб, картофель фри, маринованный лук и соусы"
+                                  },
+                                  {
+                                      "id":  "combos-7",
+                                      "name":  "Комбо Крылышки Сет",
+                                      "available":  true,
+                                      "price":  450,
+                                      "image":  "images/dishes/burger_krylyshki.jpg",
+                                      "desc":  "Золотистые куриные крылышки гриль (6 шт), картофель фри, фирменный соус и напиток"
+                                  },
+                                  {
+                                      "id":  "combos-8",
+                                      "name":  "Чайный Сет «Восточный Дастархан»",
+                                      "available":  true,
+                                      "price":  490,
+                                      "image":  "images/tea/dish-1.jpg",
+                                      "desc":  "Большой чайник фирменного чая («Заман» или «Ташкентский»), бакинская пахлава, восточные сладости и кристаллический нават"
+                                  }
+                              ]
+               },
+    "pasta":  {
+                  "title":  "ПАСТА И ВОК",
+                  "titleEn":  "PASTA \u0026 WOK",
+                  "href":  "pasta.html",
+                  "thumb":  "images/dishes/pasta_slivochnaya_kuritsa.jpg",
+                  "dishes":  [
+                                 {
+                                     "id":  "pasta-2",
+                                     "name":  "Мак энд чиз с говядиной",
+                                     "available":  true,
+                                     "price":  360,
+                                     "image":  "images/uploads/dish_1790113108887.jpg",
+                                     "desc":  "Говяжья котлета, сырный соус, сыр чеддер, макароны, корнишоны."
+                                 },
+                                 {
+                                     "id":  "pasta-1",
+                                     "name":  "Паста с курицей в сливочном соусе",
+                                     "available":  true,
+                                     "price":  380,
+                                     "image":  "images/uploads/dish_1790113191945.jpg",
+                                     "desc":  "Куриное филе, грибы, паста фетучини, сливки, пармезан."
+                                 },
+                                 {
+                                     "id":  "pasta-3",
+                                     "name":  "Мак энд чиз с курицей",
+                                     "available":  true,
+                                     "price":  310,
+                                     "image":  "images/uploads/dish_1790113079529.jpg",
+                                     "desc":  "Куриная котлета, сырный соус, сыр чеддер, макароны, корнишоны"
+                                 },
+                                 {
+                                     "id":  "pasta-4",
+                                     "name":  "Паста с креветками",
+                                     "available":  true,
+                                     "price":  410,
+                                     "image":  "images/uploads/dish_1790113133128.jpg",
+                                     "desc":  "Креветки, кабачки, помидоры чере, сыр пармезан, сливки, соус песто."
+                                 },
+                                 {
+                                     "id":  "pasta-5",
+                                     "name":  "Паста с говядиной",
+                                     "available":  true,
+                                     "price":  410,
+                                     "image":  "images/uploads/dish_1790113159907.jpg",
+                                     "desc":  "Говядина, болгарский перец, красный лук, соус Деми, печеные Черри, пармезан, соус бальзамик."
+                                 },
+                                 {
+                                     "id":  "pasta-6",
+                                     "name":  "Удон с курицей",
+                                     "available":  true,
+                                     "price":  240,
+                                     "image":  "images/uploads/dish_1790113221859.jpg",
+                                     "desc":  "Говядина, болгарский перец, кабачок,лапша удон, лук репчатый, соевый соус острый соу"
+                                 },
+                                 {
+                                     "id":  "pasta-7",
+                                     "name":  "Удон с говядиной",
+                                     "available":  true,
+                                     "price":  300,
+                                     "image":  "images/uploads/dish_1790113246615.jpg",
+                                     "desc":  "Куриное филе, болгарский перец, кабачок, лук красный, морковь, лапша Удон, соевый соус, острый соус."
+                                 }
+                             ]
+              },
+    "pizza":  {
+                  "title":  "ПИЦЦА И ПИДЕ",
+                  "titleEn":  "PIZZA \u0026 PIDE",
+                  "href":  "pizza.html",
+                  "thumb":  "images/dishes/pizza_pepperoni.jpg",
+                  "dishes":  [
+                                 {
+                                     "id":  "pizza-1",
+                                     "name":  "Пиде с сыром",
+                                     "available":  true,
+                                     "price":  300,
+                                     "image":  "images/uploads/dish_1790101814098.jpg",
+                                     "desc":  "тесто, сыр."
+                                 },
+                                 {
+                                     "id":  "pizza-2",
+                                     "name":  "Пиде с фаршем",
+                                     "available":  true,
+                                     "price":  350,
+                                     "image":  "images/uploads/dish_1790101950839.jpg",
+                                     "desc":  "Тесто, Фарш говяжий, болгарский перец микс, томаты."
+                                 },
+                                 {
+                                     "id":  "pizza-3",
+                                     "name":  "Пиде с курицей",
+                                     "available":  true,
+                                     "price":  320,
+                                     "image":  "images/uploads/dish_1790101991799.jpg",
+                                     "desc":  "Тесто, куриный фарш, болгарский перец микс, томаты"
+                                 },
+                                 {
+                                     "id":  "pizza-4",
+                                     "name":  "Пицца креветки кимчи",
+                                     "available":  true,
+                                     "price":  440,
+                                     "priceSmall":  440,
+                                     "priceBig":  540,
+                                     "image":  "images/uploads/dish_1790103419212.jpg",
+                                     "desc":  "Тесто. Соус бешамель. Сыр моцарелла, креветки, соус кимчи, шпинат, сыр пармезан"
+                                 },
+                                 {
+                                     "id":  "pizza-5",
+                                     "name":  "Пицца Овощная",
+                                     "available":  true,
+                                     "price":  300,
+                                     "priceSmall":  300,
+                                     "priceBig":  370,
+                                     "image":  "images/uploads/dish_1790103525998.jpg",
+                                     "desc":  "Тесто томатный соус, томаты, грибы, болгарский перец микс"
+                                 },
+                                 {
+                                     "id":  "pizza-6",
+                                     "name":  "Пицца Цезарь",
+                                     "available":  true,
+                                     "price":  400,
+                                     "priceSmall":  400,
+                                     "priceBig":  550,
+                                     "image":  "images/uploads/dish_1790103601242.jpg",
+                                     "desc":  "тесто, соус бешамель, сыр моцарелла, куриное филе, салат айсберг, соус цезарь, Черри помидоры, сыр пармезан."
+                                 },
+                                 {
+                                     "id":  "pizza-7",
+                                     "name":  "Пицца Гавайская",
+                                     "available":  true,
+                                     "price":  370,
+                                     "priceSmall":  370,
+                                     "priceBig":  470,
+                                     "image":  "images/uploads/dish_1790103778244.jpg",
+                                     "desc":  "Тесто, сыр моцарелла, томатный соус, куриное филе, томаты, ананас"
+                                 },
+                                 {
+                                     "id":  "pizza-8",
+                                     "name":  "Пицца с курицей, фетой и песто",
+                                     "available":  true,
+                                     "price":  340,
+                                     "priceSmall":  340,
+                                     "priceBig":  470,
+                                     "image":  "images/uploads/dish_1790103719349.jpg",
+                                     "desc":  "тесто соус бешамель, сыр моцарелла, куриное филе, томаты, соус песто, сыр фета"
+                                 },
+                                 {
+                                     "id":  "pizza-9",
+                                     "name":  "Пицца Азиатская острая",
+                                     "available":  true,
+                                     "price":  370,
+                                     "priceSmall":  370,
+                                     "priceBig":  470,
+                                     "image":  "images/uploads/dish_1790103843317.jpg",
+                                     "desc":  "Тесто, томатный соус, сарма моцарелла, говядина, болгарский перец, лук красный, томаты, острый перец."
+                                 },
+                                 {
+                                     "id":  "pizza-10",
+                                     "name":  "Пицца Мексиканская",
+                                     "available":  true,
+                                     "price":  400,
+                                     "priceSmall":  400,
+                                     "priceBig":  550,
+                                     "image":  "images/uploads/dish_1790103963062.jpg",
+                                     "desc":  "Тесто, томаты соус, сыр моцарелла, говядина, болгарский перец, грибы, перец халапеньо"
+                                 },
+                                 {
+                                     "id":  "pizza-11",
+                                     "name":  "Пицца Шашлычная",
+                                     "available":  true,
+                                     "price":  350,
+                                     "priceSmall":  350,
+                                     "priceBig":  450,
+                                     "image":  "images/uploads/dish_1790104016407.jpg",
+                                     "desc":  "Тесто, томатный соус, сыр моцарелла, говяжий Фарш, томаты, лук красный маринованный."
+                                 },
+                                 {
+                                     "id":  "pizza-12",
+                                     "name":  "Пицца Пепперони",
+                                     "available":  true,
+                                     "price":  350,
+                                     "priceSmall":  350,
+                                     "priceBig":  450,
+                                     "image":  "images/uploads/dish_1790110776337.jpg",
+                                     "desc":  "тесто, томатный соус, сыр моцарелла, колбаса"
+                                 },
+                                 {
+                                     "id":  "pizza-13",
+                                     "name":  "Пицца 4 сыра",
+                                     "available":  true,
+                                     "price":  350,
+                                     "priceSmall":  350,
+                                     "priceBig":  450,
+                                     "image":  "images/uploads/dish_1790110815024.jpg",
+                                     "desc":  "Тесто соус бешамель, четыре вида сыра"
+                                 },
+                                 {
+                                     "id":  "pizza-14",
+                                     "name":  "Пицца Куриная с грибами",
+                                     "available":  true,
+                                     "price":  350,
+                                     "priceSmall":  350,
+                                     "priceBig":  450,
+                                     "image":  "images/uploads/dish_1790110854778.jpg",
+                                     "desc":  "Тесто, соус бешамель, сыр моцарелла, куриное филе, грибы, зелёный лук."
+                                 },
+                                 {
+                                     "id":  "pizza-15",
+                                     "name":  "Пицца с говядиной",
+                                     "available":  true,
+                                     "price":  400,
+                                     "priceSmall":  400,
+                                     "priceBig":  530,
+                                     "image":  "images/uploads/dish_1790110899912.jpg",
+                                     "desc":  "Тесто, томатный соус, сыр моцарелла, говядина, болгарский перец, томаты, зелёный лук."
+                                 },
+                                 {
+                                     "id":  "pizza-16",
+                                     "name":  "Пицца Ассорти",
+                                     "available":  true,
+                                     "price":  370,
+                                     "priceSmall":  370,
+                                     "priceBig":  480,
+                                     "image":  "images/uploads/dish_1790110946292.jpg",
+                                     "desc":  "Тесто, томатный соус, куриное филе, говядина, колбаса, болгарский перец, грибы, томаты,."
+                                 },
+                                 {
+                                     "id":  "pizza-17",
+                                     "name":  "Пицца Маргарита",
+                                     "available":  true,
+                                     "price":  300,
+                                     "priceSmall":  300,
+                                     "priceBig":  370,
+                                     "image":  "images/uploads/dish_1790110982447.jpg",
+                                     "desc":  "Тесто, томатное шоу, помидоры, сыр моцарелла."
+                                 }
+                             ]
+              },
+    "burgers":  {
+                    "title":  "БУРГЕРЫ И ФАСТФУД",
+                    "titleEn":  "BURGERS \u0026 FAST FOOD",
+                    "href":  "burgers.html",
+                    "thumb":  "images/dishes/burger_zaman.jpg",
+                    "dishes":  [
+                                   {
+                                       "id":  "burgers-1",
+                                       "name":  "Бургер ZAMAN",
+                                       "available":  true,
+                                       "price":  350,
+                                       "image":  "images/uploads/dish_1790113658381.jpg",
+                                       "desc":  "Булочка, помидоры, огурец, салат айсберг, говядина, сырный соус, картофель фри."
+                                   },
+                                   {
+                                       "id":  "burgers-2",
+                                       "name":  "Бургер на сырной сковородке",
+                                       "available":  true,
+                                       "price":  390,
+                                       "image":  "images/uploads/dish_1790113702950.jpg",
+                                       "desc":  "булочка, соус для бургера, куриные котлеты говяжьи котлеты, золотая айсберг, помидоры, огурец, сырный соус."
+                                   },
+                                   {
+                                       "id":  "burgers-3",
+                                       "name":  "Чикенбургер  сырно сладкой кукурузой",
+                                       "available":  true,
+                                       "price":  190,
+                                       "image":  "images/uploads/dish_1790113786580.jpg",
+                                       "desc":  "булочка, куриная котлета,  соус для бургера, сырный сладкая кукуруза, помидор, огурец, золотая айсберг."
+                                   },
+                                   {
+                                       "id":  "burgers-4",
+                                       "name":  "Чизбургер с говядиной",
+                                       "available":  true,
+                                       "price":  270,
+                                       "image":  "images/uploads/dish_1790113842625.jpg",
+                                       "desc":  "Булочка , говяжья котлета, сыр чеддер, соус для бургера, золотая айсберг, помидор, огурец"
+                                   },
+                                   {
+                                       "id":  "burgers-5",
+                                       "name":  "Гавайский бургер",
+                                       "available":  true,
+                                       "price":  300,
+                                       "image":  "images/uploads/dish_1790113888336.jpg",
+                                       "desc":  "Булочка, говяжья котлета, соус для бургера, помидоры, огурец, золотая айсберг, ананас."
+                                   },
+                                   {
+                                       "id":  "burgers-6",
+                                       "name":  "Шаурма кебаб с курицей",
+                                       "available":  true,
+                                       "price":  250,
+                                       "image":  "images/uploads/dish_1790114915772.jpg",
+                                       "desc":  "Два вида соуса, помидоры, огурец свежий, салат",
+                                       "priceSmall":  250,
+                                       "priceBig":  330
+                                   },
+                                   {
+                                       "id":  "burgers-8",
+                                       "name":  "Шаурма кебаб с говядиной",
+                                       "available":  true,
+                                       "price":  260,
+                                       "image":  "images/uploads/dish_1790114993070.jpg",
+                                       "desc":  "Два вида соуса, помидоры, огурец свежий, салат",
+                                       "priceSmall":  260,
+                                       "priceBig":  350
+                                   },
+                                   {
+                                       "id":  "burgers-12",
+                                       "name":  "Шаурма кебаб запеченная с курицей",
+                                       "available":  true,
+                                       "price":  270,
+                                       "image":  "images/uploads/dish_1790115148060.jpg",
+                                       "desc":  "Два вида соуса, помидоры, огурец свежий, салат",
+                                       "priceSmall":  270,
+                                       "priceBig":  350
+                                   },
+                                   {
+                                       "id":  "burgers-13",
+                                       "name":  "Шаурма кебаб запеченная с говядиной",
+                                       "available":  true,
+                                       "price":  290,
+                                       "image":  "images/uploads/dish_1790115188222.jpg",
+                                       "desc":  "Два вида соуса, помидоры, огурец свежий, салат",
+                                       "priceSmall":  290,
+                                       "priceBig":  370
+                                   },
+                                   {
+                                       "id":  "burgers-14",
+                                       "name":  "Хот-дог с говядиной",
+                                       "available":  true,
+                                       "price":  250,
+                                       "image":  "images/uploads/dish_1790113942790.jpg",
+                                       "desc":  "Булочка, говядина, сырный соус."
+                                   },
+                                   {
+                                       "id":  "burgers-15",
+                                       "name":  "Хот-дог Нью-Йорк",
+                                       "available":  true,
+                                       "price":  180,
+                                       "image":  "images/uploads/dish_1790113986898.jpg",
+                                       "desc":  "Булочка, сосиска, соус три вида, огурец, помидор, лук фри"
+                                   },
+                                   {
+                                       "id":  "burgers-16",
+                                       "name":  "Чиккен Хот-дог",
+                                       "available":  true,
+                                       "price":  200,
+                                       "image":  "images/uploads/dish_1790114042502.jpg",
+                                       "desc":  "Булочка, хрустящая курица, салат, сырный соус, лук фри."
+                                   },
+                                   {
+                                       "id":  "burgers-17",
+                                       "name":  "Гавайский Хот-дог Гавайский",
+                                       "available":  true,
+                                       "price":  210,
+                                       "image":  "images/uploads/dish_1790114079660.jpg",
+                                       "desc":  "Булочка, салат,айсберг, соус, помидор, сырный соус, ананас."
+                                   },
+                                   {
+                                       "id":  "burgers-18",
+                                       "name":  "Хот-дог Барбекю",
+                                       "available":  true,
+                                       "price":  200,
+                                       "image":  "images/uploads/dish_1790114112020.jpg",
+                                       "desc":  "Булочка, соус, салата айсберг, соус барбекью."
+                                   },
+                                   {
+                                       "id":  "burgers-19",
+                                       "name":  "Советский Хот-дог Советский",
+                                       "available":  true,
+                                       "price":  190,
+                                       "image":  "images/uploads/dish_1790114166000.jpg",
+                                       "desc":  "Булочка, соус, помидор, золотая айсберг, морковный салат"
+                                   },
+                                   {
+                                       "id":  "burgers-20",
+                                       "name":  "Куриные крылышки",
+                                       "available":  true,
+                                       "price":  700,
+                                       "image":  "images/uploads/dish_1790115835046.jpg",
+                                       "desc":  "3 шт — 140 с | 6 шт — 240 с | 0.5 кг — 350 с \n Хрустящие золотистые крылья во фритюре с соусом"
+                                   },
+                                   {
+                                       "id":  "burgers-21",
+                                       "name":  "Куриные стрипсы",
+                                       "available":  true,
+                                       "price":  800,
+                                       "image":  "images/uploads/dish_1790115884729.jpg",
+                                       "desc":  "3 шт — 180 с | 6 шт — 280 с | 0.5 кг — 400 с | Отборное нежное куриное филе в хрустящей панировке"
+                                   },
+                                   {
+                                       "id":  "burgers-22",
+                                       "name":  "Картофель фри",
+                                       "available":  true,
+                                       "price":  140,
+                                       "image":  "images/uploads/dish_1790114926050.jpg",
+                                       "desc":  "Классический хрустящий картофель фри с солью"
+                                   },
+                                   {
+                                       "id":  "burgers-23",
+                                       "name":  "Картофель по-деревенски",
+                                       "available":  true,
+                                       "price":  160,
+                                       "image":  "images/uploads/dish_1790114944960.jpg",
+                                       "desc":  "Ароматные картофельные дольки, запеченные с чесноком и травами"
+                                   }
+                               ]
+                },
+    "rolls":  {
+                  "title":  "РОЛЛЫ И СУШИ",
+                  "titleEn":  "ROLLS \u0026 SUSHI",
+                  "href":  "rolls.html",
+                  "thumb":  "images/dishes/rolls_filadelfiya.jpg",
+                  "dishes":  [
+                                 {
+                                     "id":  "rolls-1",
+                                     "name":  "Сет Холодный (32шт)",
+                                     "available":  true,
+                                     "price":  1370,
+                                     "image":  "images/uploads/dish_1790116632471.jpg",
+                                     "desc":  "Филадельфия, фудзи, Канада, Калифорния с креветкой"
+                                 },
+                                 {
+                                     "id":  "rolls-2",
+                                     "name":  "Сет Жареный (32шт)",
+                                     "available":  true,
+                                     "price":  1390,
+                                     "image":  "images/uploads/dish_1790116457031.jpg",
+                                     "desc":  "Горячий шик, темпура фурам, горячий лосось, жареные с угрем"
+                                 },
+                                 {
+                                     "id":  "rolls-3",
+                                     "name":  "Сет Запеченный (32шт)",
+                                     "available":  true,
+                                     "price":  1250,
+                                     "image":  "images/uploads/dish_1790118888120.jpg",
+                                     "desc":  "Запеченная с курицей, Калифорния запечённая, запечённая с сыром, бешеный лосось."
+                                 },
+                                 {
+                                     "id":  "rolls-4",
+                                     "name":  "Ролл Филадельфия",
+                                     "available":  true,
+                                     "price":  360,
+                                     "image":  "images/uploads/dish_1790116532971.jpg",
+                                     "desc":  "Рис, творожный сыр, огурец, лосось"
+                                 },
+                                 {
+                                     "id":  "rolls-5",
+                                     "name":  "Ролл Фудзи",
+                                     "available":  true,
+                                     "price":  370,
+                                     "image":  "images/uploads/dish_1790116573421.jpg",
+                                     "desc":  "Рис, сыр творожный, имбирь, уголь, огурец, Унаги соус"
+                                 },
+                                 {
+                                     "id":  "rolls-6",
+                                     "name":  "Канада",
+                                     "available":  true,
+                                     "price":  370,
+                                     "image":  "images/uploads/dish_1790116673634.jpg",
+                                     "desc":  "Рис, угорь, творожный сыр, огурец, соус Унаги.)"
+                                 },
+                                 {
+                                     "id":  "rolls-7",
+                                     "name":  "Ролл с угрем",
+                                     "available":  true,
+                                     "price":  200,
+                                     "image":  "images/uploads/dish_1790116739724.jpg",
+                                     "desc":  "Рис,нори,угорь,унаги"
+                                 },
+                                 {
+                                     "id":  "rolls-8",
+                                     "name":  "Ролл с огурцом",
+                                     "available":  true,
+                                     "price":  150,
+                                     "image":  "images/uploads/dish_1790116780041.jpg",
+                                     "desc":  "Рис,огурец,нори."
+                                 },
+                                 {
+                                     "id":  "rolls-9",
+                                     "name":  "Калифорния с лососем",
+                                     "available":  true,
+                                     "price":  320,
+                                     "image":  "images/uploads/dish_1790118822595.jpg",
+                                     "desc":  ""
+                                 },
+                                 {
+                                     "id":  "rolls-10",
+                                     "name":  "Ролл Чеддер",
+                                     "available":  true,
+                                     "price":  400,
+                                     "image":  "images/uploads/dish_1790116846876.jpg",
+                                     "desc":  "Рис,нори,огурец,сыр творожный,курица,соус унаги."
+                                 },
+                                 {
+                                     "id":  "rolls-11",
+                                     "name":  "Калифорния с крабом",
+                                     "available":  true,
+                                     "price":  250,
+                                     "image":  "images/uploads/dish_1790118804710.jpg",
+                                     "desc":  ""
+                                 },
+                                 {
+                                     "id":  "rolls-12",
+                                     "name":  "Филадельфия микс",
+                                     "available":  true,
+                                     "price":  380,
+                                     "image":  "images/uploads/dish_1790116243841.jpg",
+                                     "desc":  "рис,нори,творожный сыр,угорь лосось"
+                                 },
+                                 {
+                                     "id":  "rolls-13",
+                                     "name":  "Калифорния с креветкой",
+                                     "available":  true,
+                                     "price":  280,
+                                     "image":  "images/uploads/dish_1790118845031.jpg",
+                                     "desc":  ""
+                                 },
+                                 {
+                                     "id":  "rolls-14",
+                                     "name":  "Цезарь темпура",
+                                     "available":  true,
+                                     "price":  390,
+                                     "image":  "images/uploads/dish_1790116922121.jpg",
+                                     "desc":  "Куриное филе, салат айсберг, томаты, пармезан, хрустящая темпура (8 шт)"
+                                 },
+                                 {
+                                     "id":  "rolls-15",
+                                     "name":  "Горячий шик",
+                                     "available":  true,
+                                     "price":  410,
+                                     "image":  "images/uploads/dish_1790116296765.jpg",
+                                     "desc":  "рис,нори,творожный сыр,огурец,угорь,лосось,два вида соуса."
+                                 },
+                                 {
+                                     "id":  "rolls-16",
+                                     "name":  "Темпура с креветкой",
+                                     "available":  true,
+                                     "price":  310,
+                                     "image":  "images/uploads/dish_1790118305164.jpg",
+                                     "desc":  "Рис,нори,креветка,огурец,творожный сыр,спайси соус,унаги соус."
+                                 },
+                                 {
+                                     "id":  "rolls-17",
+                                     "name":  "Жареный с угрем",
+                                     "available":  true,
+                                     "price":  290,
+                                     "image":  "images/uploads/dish_1790116908821.jpg",
+                                     "desc":  "Рис,творожный сыр,курица,айсберг,помидо,цезарь соус."
+                                 },
+                                 {
+                                     "id":  "rolls-18",
+                                     "name":  "Темпура фурай",
+                                     "available":  true,
+                                     "price":  310,
+                                     "image":  "images/uploads/dish_1790118338549.jpg",
+                                     "desc":  "Рис,нори,сыр творожный,огурец,креветка,3 вида соуса"
+                                 },
+                                 {
+                                     "id":  "rolls-19",
+                                     "name":  "Горячий лосось",
+                                     "available":  true,
+                                     "price":  350,
+                                     "image":  "images/uploads/dish_1790116343067.jpg",
+                                     "desc":  "Рис, нори, сыр творожный, огурец, лосось, соус и ноги."
+                                 },
+                                 {
+                                     "id":  "rolls-20",
+                                     "name":  "Фила жареная",
+                                     "available":  true,
+                                     "price":  370,
+                                     "image":  "images/uploads/dish_1790116391383.jpg",
+                                     "desc":  "Рис,нори,творожный сыр,лосось,"
+                                 },
+                                 {
+                                     "id":  "rolls-21",
+                                     "name":  "Гаваи",
+                                     "available":  true,
+                                     "price":  275,
+                                     "image":  "images/uploads/dish_1790118389331.jpg",
+                                     "desc":  "Рис,нори,курица,ананас,панко,соус унаги"
+                                 },
+                                 {
+                                     "id":  "rolls-22",
+                                     "name":  "Бруклин",
+                                     "available":  true,
+                                     "price":  275,
+                                     "image":  "images/uploads/dish_1790118425894.jpg",
+                                     "desc":  "Нори, рис, краб, огурцы, соус Унаги."
+                                 },
+                                 {
+                                     "id":  "rolls-23",
+                                     "name":  "Запеченная с курицей",
+                                     "available":  true,
+                                     "price":  290,
+                                     "image":  "images/uploads/dish_1790118505189.jpg",
+                                     "desc":  "Рис, курица, творожный сыр, огурец, сырный замес,соус Унаги,"
+                                 },
+                                 {
+                                     "id":  "rolls-24",
+                                     "name":  "Запеченная с угрем",
+                                     "available":  true,
+                                     "price":  410,
+                                     "image":  "images/uploads/dish_1790118542811.jpg",
+                                     "desc":  "Рис, сыр творожный, огурец, угорь замес, Унаги соус."
+                                 },
+                                 {
+                                     "id":  "rolls-25",
+                                     "name":  "Запеченный с лососем",
+                                     "available":  true,
+                                     "price":  370,
+                                     "image":  "images/uploads/dish_1790118585421.jpg",
+                                     "desc":  "Рис, огурец, нори, сыр творожный, лосось замес, соус Унаги."
+                                 },
+                                 {
+                                     "id":  "rolls-26",
+                                     "name":  "Калифорния запеченная",
+                                     "available":  true,
+                                     "price":  300,
+                                     "image":  "images/uploads/dish_1790118750866.jpg",
+                                     "desc":  "Рис, творожный сыр, огурец, крабовый замес, соус Унаги."
+                                 },
+                                 {
+                                     "id":  "rolls-27",
+                                     "name":  "Бешеный лосось",
+                                     "available":  true,
+                                     "price":  390,
+                                     "image":  "images/uploads/dish_1790118635904.jpg",
+                                     "desc":  "Рис творожный сыр, огурец, бешеный замес, шик соус, Унаги соус. Тобика."
+                                 },
+                                 {
+                                     "id":  "rolls-28",
+                                     "name":  "Запеченный с сыром",
+                                     "available":  true,
+                                     "price":  300,
+                                     "image":  "images/uploads/dish_1790118706911.jpg",
+                                     "desc":  "Рис, нори, огурец, сырный замес, соус Унаг"
+                                 }
+                             ]
+              },
+    "grill":  {
+                  "title":  "ШАШЛЫК И ГРИЛЬ",
+                  "titleEn":  "GRILL \u0026 BBQ",
+                  "href":  "grill.html",
+                  "thumb":  "images/dishes/grill_shashlyk_baranina.jpg",
+                  "dishes":  [
+                                 {
+                                     "id":  "grill-1",
+                                     "name":  "Шашлык из куриного филе",
+                                     "available":  true,
+                                     "price":  190,
+                                     "image":  "images/uploads/dish_1790115373833.jpg",
+                                     "desc":  "Нежное куриное филе в восточном маринаде на углях, с маринованным луком и лавашом"
+                                 },
+                                 {
+                                     "id":  "grill-2",
+                                     "name":  "Люля-кебаб из курицы",
+                                     "available":  true,
+                                     "price":  190,
+                                     "image":  "images/uploads/dish_1790115556942.jpg",
+                                     "desc":  "Сочный рубленый куриный люля-кебаб со специями, запеченный на шампуре над углями"
+                                 },
+                                 {
+                                     "id":  "grill-3",
+                                     "name":  "Люля кебаб с сыром",
+                                     "available":  true,
+                                     "price":  230,
+                                     "image":  "images/uploads/dish_1790115889512.jpg",
+                                     "desc":  "Рубленое мясо с начинкой из расплавленного сыра сулугуни внутри, с дымком от углей"
+                                 },
+                                 {
+                                     "id":  "grill-4",
+                                     "name":  "Шашлык крылышки",
+                                     "available":  true,
+                                     "price":  190,
+                                     "image":  "images/uploads/dish_1790116092711.jpg",
+                                     "desc":  "Золотистые крылышки на мангале с хрустящей корочкой и ароматными пряностями"
+                                 },
+                                 {
+                                     "id":  "grill-5",
+                                     "name":  "Шашлык из баранины",
+                                     "available":  true,
+                                     "price":  280,
+                                     "image":  "images/uploads/dish_1790116254311.jpg",
+                                     "desc":  "Мякоть молодой баранины с курдюком, маринованная с луком и зирой, на углях"
+                                 },
+                                 {
+                                     "id":  "grill-6",
+                                     "name":  "Шашлык из говядины",
+                                     "available":  true,
+                                     "price":  280,
+                                     "image":  "images/uploads/dish_1790116218951.jpg",
+                                     "desc":  "Отборные сочные кусочки говядины, приготовленные на мангале с луком и фирменным соусом"
+                                 },
+                                 {
+                                     "id":  "grill-7",
+                                     "name":  "Люля кебаб",
+                                     "available":  true,
+                                     "price":  210,
+                                     "image":  "images/uploads/dish_1790116304194.jpg",
+                                     "desc":  "Классический кавказский люля из рубленой говядины с кавказскими травами и луком"
+                                 },
+                                 {
+                                     "id":  "grill-8",
+                                     "name":  "Люля кебаб острый",
+                                     "available":  true,
+                                     "price":  210,
+                                     "image":  "images/uploads/dish_1790116331839.jpg",
+                                     "desc":  "Пикантный люля-кебаб с острым перцем чили, чесноком и свежей кинзой"
+                                 },
+                                 {
+                                     "id":  "grill-9",
+                                     "name":  "Стейк Тибон",
+                                     "available":  true,
+                                     "price":  840,
+                                     "image":  "images/uploads/dish_1790116399703.jpg",
+                                     "desc":  "Премиальный стейк на Т-образной кости: стриплойн и нежное филе миньон, подается с соусом BBQ"
+                                 },
+                                 {
+                                     "id":  "grill-10",
+                                     "name":  "Стейк Томагавк",
+                                     "available":  true,
+                                     "price":  840,
+                                     "image":  "images/uploads/dish_1790116430461.jpg",
+                                     "desc":  "Большой рибай-стейк на длинном ребре, обжаренный на гриле до идеальной сочности"
+                                 },
+                                 {
+                                     "id":  "grill-11",
+                                     "name":  "Баранья корейка",
+                                     "available":  true,
+                                     "price":  650,
+                                     "image":  "images/uploads/dish_1790116490382.jpg",
+                                     "desc":  "Нежные ребрышки ягненка на гриле с розмарином, чесноком и гранатовым соусом наршараб"
+                                 },
+                                 {
+                                     "id":  "grill-12",
+                                     "name":  "Стейк куриный",
+                                     "available":  true,
+                                     "price":  375,
+                                     "image":  "images/uploads/dish_1790116520048.jpg",
+                                     "desc":  "Филе курицы на гриле с аппетитными полосками, подается со сливочным соусом"
+                                 },
+                                 {
+                                     "id":  "grill-13",
+                                     "name":  "Дорадо на гриле",
+                                     "available":  true,
+                                     "price":  900,
+                                     "image":  "images/uploads/dish_1790116556171.jpg",
+                                     "desc":  "Цельная свежая рыба дорадо, запеченная на гриле с лимоном, тимьяном и морской солью"
+                                 },
+                                 {
+                                     "id":  "grill-14",
+                                     "name":  "Стейк из лосося на гриле",
+                                     "available":  true,
+                                     "price":  820,
+                                     "image":  "images/uploads/dish_1790116595545.jpg",
+                                     "desc":  "Нежный стейк атлантического лосося на углях с лимоном и свежей зеленью"
+                                 }
+                             ]
+              },
+    "desserts":  {
+                     "title":  "ДЕСЕРТЫ",
+                     "titleEn":  "DESSERTS",
+                     "href":  "desserts.html",
+                     "thumb":  "images/desserts/thumb.jpg",
+                     "dishes":  [
+                                    {
+                                        "id":  "desserts-1",
+                                        "name":  "Пахлава бакинская",
+                                        "available":  true,
+                                        "price":  220,
+                                        "image":  "images/desserts/dish-1.jpg",
+                                        "desc":  "Многослойная медовая выпечка с грецким орехом и кардамоном"
+                                    },
+                                    {
+                                        "id":  "desserts-2",
+                                        "name":  "Чизкейк с лесными ягодами",
+                                        "available":  true,
+                                        "price":  320,
+                                        "image":  "images/desserts/dish-2.jpg",
+                                        "desc":  "Нежная сливочно-сырная основа с соусом из лесных ягод"
+                                    },
+                                    {
+                                        "id":  "desserts-3",
+                                        "name":  "Фруктовое ассорти",
+                                        "available":  true,
+                                        "price":  240,
+                                        "image":  "images/desserts/dish-3.jpg",
+                                        "desc":  "Свежие сезонные фрукты с натуральным горным мёдом"
+                                    },
+                                    {
+                                        "id":  "desserts-4",
+                                        "name":  "Мороженое крафтовое",
+                                        "available":  true,
+                                        "price":  180,
+                                        "image":  "images/desserts/dish-4.jpg",
+                                        "desc":  "Три шарика пломбира с дроблёными фисташками и шоколадом"
+                                    },
+                                    {
+                                        "id":  "desserts-5",
+                                        "name":  "Тирамису классический",
+                                        "available":  true,
+                                        "price":  330,
+                                        "image":  "images/desserts/dish-5.jpg",
+                                        "desc":  "Итальянское печенье савоярди с кофейной пропиткой и маскарпоне"
+                                    },
+                                    {
+                                        "id":  "desserts-6",
+                                        "name":  "Восточные сладости к чаю",
+                                        "available":  true,
+                                        "price":  150,
+                                        "image":  "images/desserts/dish-6.jpg",
+                                        "desc":  "Медовый чак-чак, фисташковая халва и рахат-лукум"
+                                    }
+                                ]
+                 },
+    "drinks":  {
+                   "title":  "НАПИТКИ",
+                   "titleEn":  "BEVERAGES",
+                   "href":  "drinks.html",
+                   "thumb":  "images/drinks/thumb.jpg",
+                   "dishes":  [
+                                  {
+                                      "id":  "drinks-4115",
+                                      "name":  "Pepsi",
+                                      "price":  70,
+                                      "desc":  "",
+                                      "image":  "images/salads/dish-1.jpg",
+                                      "available":  true,
+                                      "priceSmall":  70,
+                                      "priceBig":  130
+                                  },
+                                  {
+                                      "id":  "drinks-8956",
+                                      "name":  "Coca-Cola",
+                                      "price":  70,
+                                      "desc":  "",
+                                      "image":  "images/salads/dish-1.jpg",
+                                      "available":  true,
+                                      "priceSmall":  70,
+                                      "priceBig":  130
+                                  },
+                                  {
+                                      "id":  "drinks-0723",
+                                      "name":  "Flavis",
+                                      "price":  60,
+                                      "desc":  "",
+                                      "image":  "images/salads/dish-1.jpg",
+                                      "available":  true,
+                                      "priceSmall":  60,
+                                      "priceBig":  130
+                                  },
+                                  {
+                                      "id":  "drinks-7995",
+                                      "name":  "Fanta",
+                                      "price":  70,
+                                      "desc":  "",
+                                      "image":  "images/salads/dish-1.jpg",
+                                      "available":  true,
+                                      "priceSmall":  70,
+                                      "priceBig":  130
+                                  },
+                                  {
+                                      "id":  "drinks-4875",
+                                      "name":  "FuceTea",
+                                      "price":  70,
+                                      "desc":  "",
+                                      "image":  "images/salads/dish-1.jpg",
+                                      "available":  true,
+                                      "priceSmall":  70,
+                                      "priceBig":  130
+                                  },
+                                  {
+                                      "id":  "drinks-4015",
+                                      "name":  "LitEnergy",
+                                      "price":  150,
+                                      "desc":  "",
+                                      "image":  "images/salads/dish-1.jpg",
+                                      "available":  true
+                                  },
+                                  {
+                                      "id":  "salads-6035",
+                                      "name":  "Fanta (стекло)",
+                                      "price":  100,
+                                      "desc":  "",
+                                      "image":  "images/salads/dish-1.jpg",
+                                      "available":  true
+                                  },
+                                  {
+                                      "id":  "salads-3051",
+                                      "name":  "Rc-Cola",
+                                      "price":  100,
+                                      "desc":  "",
+                                      "image":  "images/salads/dish-1.jpg",
+                                      "available":  true
+                                  },
+                                  {
+                                      "id":  "salads-6307",
+                                      "name":  "Mirinda (Жел-Баночка)",
+                                      "price":  120,
+                                      "desc":  "",
+                                      "image":  "images/salads/dish-1.jpg",
+                                      "available":  true
+                                  },
+                                  {
+                                      "id":  "drinks-8659",
+                                      "name":  "Адыгене",
+                                      "price":  60,
+                                      "desc":  "",
+                                      "image":  "images/salads/dish-1.jpg",
+                                      "available":  true,
+                                      "priceSmall":  60,
+                                      "priceBig":  80
+                                  }
+                              ]
+               },
+    "tea":  {
+                "title":  "ЧАЙНАЯ КАРТА",
+                "titleEn":  "TEA CARD",
+                "href":  "tea.html",
+                "thumb":  "images/tea/thumb.jpg",
+                "dishes":  [
+                               {
+                                   "id":  "tea-1",
+                                   "name":  "Фирменный чай яблочная карамель",
+                                   "available":  true,
+                                   "price":  250,
+                                   "image":  "images/tea/dish-1.jpg",
+                                   "desc":  ""
+                               },
+                               {
+                                   "id":  "tea-2",
+                                   "name":  "Манго маракуя чай",
+                                   "available":  true,
+                                   "price":  230,
+                                   "image":  "images/tea/dish-2.jpg",
+                                   "desc":  ""
+                               },
+                               {
+                                   "id":  "tea-3",
+                                   "name":  "Имбирный чай",
+                                   "available":  true,
+                                   "price":  220,
+                                   "image":  "images/tea/dish-3.jpg",
+                                   "desc":  ""
+                               },
+                               {
+                                   "id":  "tea-4",
+                                   "name":  "Ягодный чай",
+                                   "available":  true,
+                                   "price":  240,
+                                   "image":  "images/tea/dish-4.jpg",
+                                   "desc":  ""
+                               },
+                               {
+                                   "id":  "tea-5",
+                                   "name":  "Ташкентский чай",
+                                   "available":  true,
+                                   "price":  240,
+                                   "image":  "images/tea/dish-5.jpg",
+                                   "desc":  ""
+                               },
+                               {
+                                   "id":  "tea-6",
+                                   "name":  "Фруктовый чай",
+                                   "available":  true,
+                                   "price":  250,
+                                   "image":  "images/tea/dish-6.jpg",
+                                   "desc":  ""
+                               },
+                               {
+                                   "id":  "tea-7815",
+                                   "name":  "Облепиховый чай",
+                                   "price":  230,
+                                   "desc":  "",
+                                   "image":  "images/salads/dish-1.jpg",
+                                   "available":  true
+                               }
+                           ]
+            },
+    "cooked-to-order":  {
+                            "title":  "БЛЮДА НА ЗАКАЗ",
+                            "titleEn":  "COOKED TO ORDER",
+                            "page":  "26",
+                            "href":  "cooked-to-order.html",
+                            "thumb":  "images/salads/thumb.jpg",
+                            "dishes":  [
+
+                                       ]
+                        },
+    "mojito":  {
+                   "title":  "МОХИТО",
+                   "titleEn":  "MOJITO",
+                   "page":  "28",
+                   "href":  "mojito.html",
+                   "thumb":  "images/salads/thumb.jpg",
+                   "dishes":  [
+                                  {
+                                      "id":  "mojito-1965",
+                                      "name":  "Мохито классический",
+                                      "price":  120,
+                                      "desc":  "",
+                                      "image":  "images/salads/dish-1.jpg",
+                                      "available":  true,
+                                      "priceSmall":  120,
+                                      "priceBig":  270
+                                  },
+                                  {
+                                      "id":  "mojito-1691",
+                                      "name":  "Мохито клубничный",
+                                      "price":  120,
+                                      "desc":  "",
+                                      "image":  "images/salads/dish-1.jpg",
+                                      "available":  true,
+                                      "priceSmall":  120,
+                                      "priceBig":  270
+                                  },
+                                  {
+                                      "id":  "mojito-3784",
+                                      "name":  "Мохито ягодный",
+                                      "price":  120,
+                                      "desc":  "",
+                                      "image":  "images/salads/dish-1.jpg",
+                                      "available":  true,
+                                      "priceSmall":  120,
+                                      "priceBig":  270
+                                  },
+                                  {
+                                      "id":  "mojito-2293",
+                                      "name":  "Мохито арбузный",
+                                      "price":  120,
+                                      "desc":  "",
+                                      "image":  "images/salads/dish-1.jpg",
+                                      "available":  true,
+                                      "priceSmall":  120,
+                                      "priceBig":  270
+                                  },
+                                  {
+                                      "id":  "mojito-0713",
+                                      "name":  "Мохито ананасовый",
+                                      "price":  120,
+                                      "desc":  "",
+                                      "image":  "images/salads/dish-1.jpg",
+                                      "available":  true,
+                                      "priceSmall":  120,
+                                      "priceBig":  270
+                                  },
+                                  {
+                                      "id":  "mojito-1877",
+                                      "name":  "Мохито голубая логуна",
+                                      "price":  120,
+                                      "desc":  "",
+                                      "image":  "images/salads/dish-1.jpg",
+                                      "available":  true,
+                                      "priceSmall":  120,
+                                      "priceBig":  270
+                                  }
+                              ]
+               },
+    "limonades":  {
+                      "title":  "АВТОРСКИЕ ЛИМОНАДЫ",
+                      "titleEn":  "LIMONADES",
+                      "page":  "30",
+                      "href":  "limonades.html",
+                      "thumb":  "images/salads/thumb.jpg",
+                      "dishes":  [
+                                     {
+                                         "id":  "limonades-9037",
+                                         "name":  "Манго маракуя",
+                                         "price":  200,
+                                         "desc":  "",
+                                         "image":  "images/salads/dish-1.jpg",
+                                         "available":  true,
+                                         "priceSmall":  200,
+                                         "priceBig":  390
+                                     },
+                                     {
+                                         "id":  "limonades-5477",
+                                         "name":  "Персик манго",
+                                         "price":  190,
+                                         "desc":  "",
+                                         "image":  "images/salads/dish-1.jpg",
+                                         "available":  true,
+                                         "priceSmall":  190,
+                                         "priceBig":  380
+                                     },
+                                     {
+                                         "id":  "limonades-2386",
+                                         "name":  "Граната клубника",
+                                         "price":  200,
+                                         "desc":  "",
+                                         "image":  "images/salads/dish-1.jpg",
+                                         "available":  true,
+                                         "priceSmall":  200,
+                                         "priceBig":  390
+                                     },
+                                     {
+                                         "id":  "limonades-1038",
+                                         "name":  "Апельсин клубника",
+                                         "price":  190,
+                                         "desc":  "",
+                                         "image":  "images/salads/dish-1.jpg",
+                                         "available":  true,
+                                         "priceSmall":  190,
+                                         "priceBig":  380
+                                     },
+                                     {
+                                         "id":  "limonades-9530",
+                                         "name":  "Яблоко киви",
+                                         "price":  180,
+                                         "desc":  "",
+                                         "image":  "images/salads/dish-1.jpg",
+                                         "available":  true,
+                                         "priceSmall":  180,
+                                         "priceBig":  355
+                                     },
+                                     {
+                                         "id":  "limonades-6722",
+                                         "name":  "Груша маракуя",
+                                         "price":  180,
+                                         "desc":  "",
+                                         "image":  "images/salads/dish-1.jpg",
+                                         "available":  true,
+                                         "priceSmall":  180,
+                                         "priceBig":  360
+                                     },
+                                     {
+                                         "id":  "limonades-8334",
+                                         "name":  "Лимонад ZAMAN",
+                                         "price":  190,
+                                         "desc":  "",
+                                         "image":  "images/salads/dish-1.jpg",
+                                         "available":  true,
+                                         "priceSmall":  190,
+                                         "priceBig":  380
+                                     }
+                                 ]
+                  },
+    "smoothie":  {
+                     "title":  "СМУЗИ",
+                     "titleEn":  "SMOOTHIE",
+                     "page":  "32",
+                     "href":  "smoothie.html",
+                     "thumb":  "images/salads/thumb.jpg",
+                     "dishes":  [
+                                    {
+                                        "id":  "smoothie-8924",
+                                        "name":  "Банан киви",
+                                        "price":  220,
+                                        "desc":  "",
+                                        "image":  "images/salads/dish-1.jpg",
+                                        "available":  true
+                                    },
+                                    {
+                                        "id":  "smoothie-3441",
+                                        "name":  "Ягодный микс",
+                                        "price":  220,
+                                        "desc":  "",
+                                        "image":  "images/salads/dish-1.jpg",
+                                        "available":  true
+                                    },
+                                    {
+                                        "id":  "smoothie-7516",
+                                        "name":  "Ягодно банановый",
+                                        "price":  230,
+                                        "desc":  "",
+                                        "image":  "images/salads/dish-1.jpg",
+                                        "available":  true
+                                    },
+                                    {
+                                        "id":  "smoothie-4298",
+                                        "name":  "Морковно апельсиновый смузи",
+                                        "price":  230,
+                                        "desc":  "",
+                                        "image":  "images/salads/dish-1.jpg",
+                                        "available":  true
+                                    }
+                                ]
+                 },
+    "milkshake":  {
+                      "title":  "МИЛКШЕЙКИ",
+                      "titleEn":  "MILKSHAKE",
+                      "page":  "34",
+                      "href":  "milkshake.html",
+                      "thumb":  "images/salads/thumb.jpg",
+                      "dishes":  [
+                                     {
+                                         "id":  "milkshake-5445",
+                                         "name":  "Сникерс",
+                                         "price":  220,
+                                         "desc":  "",
+                                         "image":  "images/salads/dish-1.jpg",
+                                         "available":  true
+                                     },
+                                     {
+                                         "id":  "milkshake-4613",
+                                         "name":  "Орео",
+                                         "price":  220,
+                                         "desc":  "",
+                                         "image":  "images/salads/dish-1.jpg",
+                                         "available":  true
+                                     },
+                                     {
+                                         "id":  "milkshake-9365",
+                                         "name":  "Шоколадный",
+                                         "price":  220,
+                                         "desc":  "",
+                                         "image":  "images/salads/dish-1.jpg",
+                                         "available":  true
+                                     },
+                                     {
+                                         "id":  "milkshake-7131",
+                                         "name":  "Клубничный",
+                                         "price":  220,
+                                         "desc":  "",
+                                         "image":  "images/salads/dish-1.jpg",
+                                         "available":  true
+                                     },
+                                     {
+                                         "id":  "milkshake-4618",
+                                         "name":  "Банановый",
+                                         "price":  220,
+                                         "desc":  "",
+                                         "image":  "images/salads/dish-1.jpg",
+                                         "available":  true
+                                     }
+                                 ]
+                  },
+    "cocktails":  {
+                      "title":  "КОКТЕЙЛИ",
+                      "titleEn":  "COCKTAILS",
+                      "page":  "36",
+                      "href":  "cocktails.html",
+                      "thumb":  "images/salads/thumb.jpg",
+                      "dishes":  [
+                                     {
+                                         "id":  "cocktails-6579",
+                                         "name":  "Клубничный бриз",
+                                         "price":  250,
+                                         "desc":  "",
+                                         "image":  "images/salads/dish-1.jpg",
+                                         "available":  true
+                                     },
+                                     {
+                                         "id":  "cocktails-7449",
+                                         "name":  "Персиковый закат",
+                                         "price":  250,
+                                         "desc":  "",
+                                         "image":  "images/salads/dish-1.jpg",
+                                         "available":  true
+                                     },
+                                     {
+                                         "id":  "cocktails-4525",
+                                         "name":  "Ананасовый вулкан",
+                                         "price":  250,
+                                         "desc":  "",
+                                         "image":  "images/salads/dish-1.jpg",
+                                         "available":  true
+                                     },
+                                     {
+                                         "id":  "cocktails-2736",
+                                         "name":  "Кокосовый рай",
+                                         "price":  250,
+                                         "desc":  "",
+                                         "image":  "images/salads/dish-1.jpg",
+                                         "available":  true
+                                     },
+                                     {
+                                         "id":  "cocktails-4975",
+                                         "name":  "Груша карамель",
+                                         "price":  250,
+                                         "desc":  "",
+                                         "image":  "images/salads/dish-1.jpg",
+                                         "available":  true
+                                     }
+                                 ]
+                  }
+}

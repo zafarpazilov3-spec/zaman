@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ZAMAN — Чайхана | Электронное меню</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400;1,700&family=Noto+Sans:wght@300;400;500;600;700;800&family=Marck+Script&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#1A0D05">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="ZAMAN">
+  <link rel="apple-touch-icon" href="images/apple_touch_icon.png">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+<body class="cover-page">
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand-wrapper" href="index.html">
+        <img src="images/logo_emblem.png" class="brand-logo-img" alt="ZAMAN">
+        <div class="brand-text">
+          <span class="brand">ZAMAN</span>
+          <span class="brand-sub">Чайхана &bull; Вкус Времени</span>
+        </div>
+      </a>
+
+      <div class="header-links">
+        <a href="about.html" class="header-link-btn" title="О чайхане">
+          ℹ️ <span>О нас</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- PWA Install Prompt Banner (Mobile) -->
+  <div class="pwa-install-banner" id="pwaInstallBanner" style="display:none;">
+    <div class="pwa-banner-inner">
+      <img src="images/logo_emblem.png" alt="ZAMAN" class="pwa-banner-icon">
+      <div class="pwa-banner-text">
+        <strong>Установить ZAMAN на экран</strong>
+        <span>Быстрый доступ к меню и работа офлайн</span>
+      </div>
+      <button type="button" class="btn-pwa-install" id="btnPwaInstall">Установить</button>
+      <button type="button" class="btn-pwa-close" id="btnPwaClose" title="Закрыть">✕</button>
+    </div>
+  </div>
+
+  <!-- First / Main Cover Sheet (ZAMAN Cover Poster in native format) -->
+  <section class="cover-sheet-section" id="coverSheet">
+    <div class="cover-sheet-container">
+      <div class="cover-card">
+        <div class="cover-media-wrap">
+          <img src="images/cover_poster.png" alt="Чайхана ZAMAN — Вкус Времени" class="cover-poster-img" id="coverPosterImg">
+        </div>
+        <div class="cover-actions-bar">
+          <a href="menu.html" class="btn-open-menu" id="btnOpenMenu" title="Перейти к выбору блюд">
+            <span class="btn-open-icon">📖</span>
+            <span class="btn-open-text">ОТКРЫТЬ МЕНЮ БЛЮД</span>
+            <span class="btn-open-arrow">➔</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- Footer -->
+  <footer class="site-footer" id="contacts">
+    <div class="footer-inner">
+      <div class="contacts">
+        📍 <strong>Адрес:</strong> Тумонбой Байзакова 137<br>
+        📞 <strong>Телефон:</strong> <a href="tel:+996556614444">+996 556 614 444</a><br>
+        📸 <strong>Instagram:</strong> <a href="https://instagram.com/zaman_chaihana" target="_blank">@zaman_chaıhana</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
