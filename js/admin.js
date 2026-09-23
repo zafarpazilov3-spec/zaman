@@ -1,5 +1,12 @@
 // Admin Panel Controller for ZAMAN Chaihana
-let currentMenu = (typeof window !== 'undefined' && window.__INITIAL_MENU__) ? window.__INITIAL_MENU__ : {};
+let currentMenu = {};
+try {
+  const cached = localStorage.getItem('zaman_menu_cache');
+  if (cached) {
+    const parsed = JSON.parse(cached);
+    if (parsed && typeof parsed === 'object') currentMenu = parsed;
+  }
+} catch (e) {}
 let currentCategory = 'all';
 let currentSearch = '';
 let tempPhotoBase64 = null;
@@ -290,39 +297,13 @@ function initSyncAndSharing() {
   }, 25000);
 }
 
-async function saveMenuToServer(silent = false, modifiedCatKey = null) {
-  // 1. Smart merge: fetch latest server menu first so changes made by another computer are never lost
-  try {
-    const ctrl = new AbortController();
-    const timer = setTimeout(() => ctrl.abort(), 4000);
-    const freshRes = await fetch('/api/menu?t=' + Date.now(), { signal: ctrl.signal, cache: 'no-cache' });
-    clearTimeout(timer);
-    if (freshRes.ok) {
-      const serverMenu = await freshRes.json();
-      if (serverMenu && typeof serverMenu === 'object' && Object.keys(serverMenu).length > 0) {
-        if (modifiedCatKey && currentMenu[modifiedCatKey]) {
-          // Keep our modified category, but adopt all other categories updated by the colleague
-          const ourCategory = currentMenu[modifiedCatKey];
-          currentMenu = Object.assign({}, serverMenu, { [modifiedCatKey]: ourCategory });
-        } else {
-          // Adopt any new categories from server
-          for (const k in serverMenu) {
-            if (!currentMenu[k]) {
-              currentMenu[k] = serverMenu[k];
-            }
-          }
-        }
-      }
-    }
-  } catch (e) {}
-
-  // 2. Immediately store in localStorage so changes are never lost
+async function saveMenuToServer(silent = false) {
+  // 1. Immediately store in localStorage so changes are never lost locally
   try {
     localStorage.setItem('zaman_menu_cache', JSON.stringify(currentMenu));
-    if (typeof window !== 'undefined') window.__INITIAL_MENU__ = currentMenu;
   } catch (e) {}
 
-  // 3. Send to backend server API
+  // 2. Send to backend server API
   try {
     const res = await fetch('/api/menu', {
       method: 'POST',
@@ -1517,19 +1498,34 @@ window.deleteCategory = async function(catKey) {
   const dishCount = (cat.dishes && Array.isArray(cat.dishes)) ? cat.dishes.length : 0;
   let confirmMsg = `Удалить категорию «${cat.title}»?`;
   if (dishCount > 0) {
-    confirmMsg = `⚠️ В категории «${cat.title}» находится ${dishCount} ${getDishWordForm(dishCount)}!\nПри удалении категории эти блюда также будут удалены.\n\nВы уверены, что хотите удалить?`;
+    confirmMsg = `⚠️ В категории «${cat.title}» находится ${dishCount} ${getDishWordForm(dishCount)}!\nПри удалении категории все эти блюда также будут удалены.\n\nВы действительно хотите удалить эту категорию?`;
   }
 
   if (confirm(confirmMsg)) {
+    const deletedTitle = cat.title;
     delete currentMenu[catKey];
     if (currentCategory === catKey) {
       currentCategory = 'all';
     }
-    await saveMenuToServer();
+
+    // Instantly update local cache
+    try {
+      localStorage.setItem('zaman_menu_cache', JSON.stringify(currentMenu));
+    } catch (e) {}
+
+    // Instantly update UI so user immediately sees category removed
     renderCategoriesList();
     renderCategoryFilters();
     renderDishes();
-    showToast(`🗑️ Категория «${cat.title}» удалена`);
+    updateStats();
+
+    // Persist to server
+    const saved = await saveMenuToServer(true);
+    if (saved) {
+      showToast(`🗑️ Категория «${deletedTitle}» удалена`);
+    } else {
+      showToast(`⚠️ Категория удалена локально, но нет связи с сервером`);
+    }
   }
 };
 

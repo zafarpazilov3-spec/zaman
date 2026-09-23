@@ -1,5 +1,5 @@
 // ZAMAN Service Worker - PWA Offline Support & Cache
-const CACHE_NAME = 'zaman-pwa-v15';
+const CACHE_NAME = 'zaman-pwa-v16';
 
 const PRECACHE_ASSETS = [
   './',
