@@ -1,5 +1,5 @@
 // ZAMAN Service Worker - PWA Offline Support & Cache
-const CACHE_NAME = 'zaman-pwa-v12';
+const CACHE_NAME = 'zaman-pwa-v14';
 
 const PRECACHE_ASSETS = [
   './',
@@ -14,8 +14,8 @@ const PRECACHE_ASSETS = [
   './js/admin.js',
   './data/menu.json',
   './data/config.json',
+  './images/cover_poster.png?v=3',
   './images/cover_poster.png',
-  './images/cover_poster.jpg',
   './images/logo_emblem.png',
   './images/app_icon_192.png',
   './images/app_icon_512.png',

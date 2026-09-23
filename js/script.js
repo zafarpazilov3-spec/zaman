@@ -259,7 +259,7 @@ function renderCatalogDishes(data) {
 function initPWA() {
   if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
-      navigator.serviceWorker.register('sw.js?v=12').catch(() => {});
+      navigator.serviceWorker.register('sw.js?v=14').catch(() => {});
     });
   }
 
