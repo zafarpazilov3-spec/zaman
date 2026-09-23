@@ -185,18 +185,18 @@
           <input type="number" id="dishModalPrice" class="form-input" placeholder="560" min="0" step="5">
         </div>
 
-        <!-- Dual Price Toggle (Auto-checked for Pizza) -->
+        <!-- Dual Price Toggle (For pizza, fast food, drinks, etc.) -->
         <div class="form-group" id="groupDualPriceToggle" style="margin-top:-0.4rem; margin-bottom:0.85rem;">
           <label style="display:inline-flex; align-items:center; gap:0.55rem; cursor:pointer; font-size:0.92rem; color:var(--gold-bright); font-weight:600; background:rgba(245,199,114,0.08); padding:0.45rem 0.8rem; border-radius:8px; border:1px solid rgba(245,199,114,0.25);">
             <input type="checkbox" id="dishModalHasDualPrice" style="width:18px; height:18px; cursor:pointer; accent-color:#F5C772;">
-            <span>🍕 Две цены (Маленькая и Большая)</span>
+            <span>Две цены (Маленькая и Большая)</span>
           </label>
         </div>
 
         <!-- Dual Price Inputs Container -->
         <div class="form-group" id="groupDualPriceInputs" style="display:none; background:rgba(166,106,42,0.14); padding:0.9rem; border-radius:12px; border:1px solid rgba(245,199,114,0.35); margin-bottom:1.1rem;">
           <div style="font-size:0.88rem; font-weight:700; color:var(--gold-bright); margin-bottom:0.6rem; display:flex; align-items:center; gap:0.4rem;">
-            <span>🍕 Цены для двух размеров пиццы:</span>
+            <span>Цены для двух размеров (порций):</span>
           </div>
           <div style="display:grid; grid-template-columns:1fr 1fr; gap:0.75rem;">
             <div>
@@ -401,6 +401,14 @@
           <div>
             <label class="form-label" for="newCatPage">Номер / Стр.:</label>
             <input type="text" id="newCatPage" class="form-input" placeholder="26">
+          </div>
+          <div>
+            <label class="form-label">Фото раздела (аватарка):</label>
+            <div style="display:flex; align-items:center; gap:0.6rem;">
+              <div id="newCatThumbPreview" style="width:42px; height:42px; border-radius:50%; border:2px solid var(--gold); background:#150A04 url('images/logo_emblem.png') center/cover; flex-shrink:0;"></div>
+              <input type="file" id="newCatThumbFile" style="display:none;" accept="image/*">
+              <label for="newCatThumbFile" class="admin-btn" style="padding:0.45rem 0.75rem; font-size:0.8rem; cursor:pointer; white-space:nowrap;">📸 Выбрать фото</label>
+            </div>
           </div>
           <div class="new-cat-btn-wrap">
             <button type="button" class="admin-btn admin-btn-primary" id="btnAddNewCategory">

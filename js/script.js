@@ -214,8 +214,8 @@ function renderCatalogDishes(data) {
 
         const dualTagsHtml = hasDualPrice ? `
           <div class="dual-price-tags">
-            <span class="price-tag-pill">🍕 Маленькая: <strong>${dish.priceSmall} сом</strong></span>
-            <span class="price-tag-pill">🍕 Большая: <strong>${dish.priceBig} сом</strong></span>
+            <span class="price-tag-pill">Маленькая: <strong>${dish.priceSmall} сом</strong></span>
+            <span class="price-tag-pill">Большая: <strong>${dish.priceBig} сом</strong></span>
           </div>
         ` : '';
 

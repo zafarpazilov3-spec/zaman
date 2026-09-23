@@ -136,17 +136,25 @@
       border: 1px dashed rgba(166,106,42,0.4);
     }
 
-    .card-crest {
-      width: 68px;
-      height: 68px;
-      background: url('images/logo_emblem.png') no-repeat center/contain;
-      margin-bottom: 0.4rem;
-      filter: drop-shadow(0 3px 8px rgba(166,106,42,0.35));
+    .card-brand-row {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.75rem;
+      margin-bottom: 0.25rem;
+    }
+
+    .card-crest-inline {
+      width: 48px;
+      height: 48px;
+      object-fit: contain;
+      filter: drop-shadow(0 2px 6px rgba(166,106,42,0.35));
+      flex-shrink: 0;
     }
 
     .card-title {
       font-family: 'Playfair Display', serif;
-      font-size: 2.8rem;
+      font-size: 2.7rem;
       font-weight: 800;
       letter-spacing: 5px;
       color: var(--brown-deep);
@@ -291,8 +299,10 @@
       <div class="table-card-frame"></div>
       
       <div>
-        <div class="card-crest"></div>
-        <div class="card-title">ZAMAN</div>
+        <div class="card-brand-row">
+          <img src="images/logo_emblem.png" alt="ZAMAN" class="card-crest-inline">
+          <span class="card-title">ZAMAN</span>
+        </div>
         <div class="card-subtitle">Чайхана &bull; Вкус Времени</div>
         <div class="card-menu-badge">ЭЛЕКТРОННОЕ МЕНЮ</div>
       </div>

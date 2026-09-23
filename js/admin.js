@@ -1162,6 +1162,23 @@ function initCategoriesModal() {
     });
   }
 
+  let newCatThumbBase64 = null;
+  const newThumbInput = document.getElementById('newCatThumbFile');
+  const newThumbPreview = document.getElementById('newCatThumbPreview');
+
+  if (newThumbInput && newThumbPreview) {
+    newThumbInput.addEventListener('change', function() {
+      const file = this.files && this.files[0];
+      if (!file) return;
+      const reader = new FileReader();
+      reader.onload = function(e) {
+        newCatThumbBase64 = e.target.result;
+        newThumbPreview.style.backgroundImage = `url('${newCatThumbBase64}')`;
+      };
+      reader.readAsDataURL(file);
+    });
+  }
+
   if (addBtn) {
     addBtn.addEventListener('click', async function() {
       const titleInput = document.getElementById('newCatTitle');
@@ -1199,12 +1216,36 @@ function initCategoriesModal() {
       const existingKeys = Object.keys(currentMenu);
       const defaultPage = page || (existingKeys.length * 2 + 2).toString().padStart(2, '0');
 
+      let initialThumb = 'images/salads/thumb.jpg';
+      if (newCatThumbBase64) {
+        showToast('⏳ Загрузка аватарки...');
+        try {
+          const res = await fetch('/api/upload-photo', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+              'Authorization': 'Bearer ' + (localStorage.getItem('zaman_admin_token') || '')
+            },
+            body: JSON.stringify({
+              fileName: `cat_${finalSlug}_${Date.now()}.jpg`,
+              base64: newCatThumbBase64
+            })
+          });
+          if (res.ok) {
+            const data = await res.json();
+            if (data && data.filePath) initialThumb = data.filePath;
+          }
+        } catch (e) {
+          initialThumb = newCatThumbBase64;
+        }
+      }
+
       currentMenu[finalSlug] = {
         title: title,
         titleEn: titleEn || title,
         page: defaultPage,
         href: `${finalSlug}.html`,
-        thumb: 'images/salads/thumb.jpg',
+        thumb: initialThumb,
         dishes: []
       };
 
@@ -1213,6 +1254,8 @@ function initCategoriesModal() {
         titleInput.value = '';
         titleEnInput.value = '';
         pageInput.value = '';
+        newCatThumbBase64 = null;
+        if (newThumbPreview) newThumbPreview.style.backgroundImage = "url('images/logo_emblem.png')";
         renderCategoriesList();
         renderCategoryFilters();
         showToast(`✅ Категория «${title}» успешно создана!`);
@@ -1253,11 +1296,23 @@ function renderCategoriesList() {
     item.id = `cat-card-${catKey}`;
 
     item.innerHTML = `
-      <div class="cat-item-top" style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:0.5rem; margin-bottom:0.8rem;">
-        <div style="display:flex; align-items:center; gap:0.55rem;">
+      <div class="cat-item-top" style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:0.6rem; margin-bottom:0.8rem;">
+        <div style="display:flex; align-items:center; gap:0.75rem;">
           <span class="cat-pos-badge" title="Порядковый номер категории">#${idx + 1}</span>
-          <strong style="color:var(--gold-bright); font-size:1rem; font-family:'Playfair Display', serif;">${cat.title}</strong>
-          <span class="cat-item-key-badge" style="font-size:0.75rem;">${catKey}</span>
+          <div class="cat-avatar-wrap" title="Нажмите, чтобы изменить фото категории в меню">
+            <img src="${cat.thumb || 'images/logo_emblem.png'}" id="cat-avatar-${catKey}" alt="${cat.title}" onerror="this.src='images/logo_emblem.png'">
+            <label for="cat-file-${catKey}" class="cat-avatar-overlay" title="Загрузить новое фото">📷</label>
+            <input type="file" id="cat-file-${catKey}" style="display:none;" accept="image/*" onchange="uploadCategoryThumb('${catKey}', this)">
+          </div>
+          <div>
+            <div style="display:flex; align-items:center; gap:0.45rem;">
+              <strong style="color:var(--gold-bright); font-size:1.05rem; font-family:'Playfair Display', serif;">${cat.title}</strong>
+              <span class="cat-item-key-badge">${catKey}</span>
+            </div>
+            <label for="cat-file-${catKey}" class="btn-cat-avatar-label" title="Загрузить фото/аватарку для этого раздела">
+              📷 <span>Сменить фото</span>
+            </label>
+          </div>
         </div>
         <div style="display:flex; align-items:center; gap:0.6rem;">
           <span class="cat-item-dish-count">🍲 ${dishCount} ${getDishWordForm(dishCount)}</span>
@@ -1298,6 +1353,63 @@ function renderCategoriesList() {
     container.appendChild(item);
   });
 }
+
+/**
+ * Upload and update category thumbnail/avatar
+ */
+window.uploadCategoryThumb = async function(catKey, input) {
+  const file = input.files && input.files[0];
+  if (!file) return;
+
+  const cat = currentMenu[catKey];
+  if (!cat) return;
+
+  showToast(`⏳ Загрузка фото для «${cat.title}»...`);
+
+  try {
+    const reader = new FileReader();
+    reader.onload = async function(e) {
+      const base64Data = e.target.result;
+      let uploadedPath = base64Data;
+
+      try {
+        const res = await fetch('/api/upload-photo', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Authorization': 'Bearer ' + (localStorage.getItem('zaman_admin_token') || '')
+          },
+          body: JSON.stringify({
+            fileName: `cat_${catKey}_${Date.now()}.jpg`,
+            base64: base64Data
+          })
+        });
+        if (res.ok) {
+          const data = await res.json();
+          if (data && data.filePath) {
+            uploadedPath = data.filePath;
+          }
+        }
+      } catch (uploadErr) {
+        console.warn('Сервер вернул ошибку, сохраняем локально:', uploadErr);
+      }
+
+      cat.thumb = uploadedPath;
+      const imgEl = document.getElementById(`cat-avatar-${catKey}`);
+      if (imgEl) imgEl.src = uploadedPath;
+
+      const saved = await saveMenuToServer();
+      renderCategoryFilters();
+      if (saved) {
+        showToast(`✅ Фото категории «${cat.title}» успешно обновлено!`);
+      }
+    };
+    reader.readAsDataURL(file);
+  } catch (err) {
+    console.error(err);
+    showToast('⚠️ Не удалось загрузить фото');
+  }
+};
 
 /**
  * Move Category Up / Down
