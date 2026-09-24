@@ -110,6 +110,7 @@ async function syncMenuData() {
       const parsed = JSON.parse(cached);
       if (parsed && typeof parsed === 'object' && Object.keys(parsed).length > 0) {
         ACTIVE_MENU = parsed;
+        renderCategoryPills(parsed);
         renderCatalogDishes(parsed);
       }
     }
@@ -259,7 +260,7 @@ function renderCatalogDishes(data) {
 function initPWA() {
   if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
-      navigator.serviceWorker.register('sw.js?v=14').catch(() => {});
+      navigator.serviceWorker.register('sw.js?v=17').catch(() => {});
     });
   }
 
