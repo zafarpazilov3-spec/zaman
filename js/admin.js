@@ -51,9 +51,10 @@ document.addEventListener('DOMContentLoaded', function() {
   loadMenu();
   loadConfig();
   initSyncAndSharing();
+  initBackupAndRestore();
   if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
-      navigator.serviceWorker.register('sw.js?v=14').catch(() => {});
+      navigator.serviceWorker.register('sw.js?v=18').catch(() => {});
     });
   }
 });
@@ -286,15 +287,92 @@ function initSyncAndSharing() {
     });
   }
 
-  // Auto-sync when user switches back to this browser tab
-  window.addEventListener('focus', () => {
-    syncMenuFromServer(false);
-  });
+}
 
-  // Background auto-sync every 25 seconds
-  setInterval(() => {
-    syncMenuFromServer(false);
-  }, 25000);
+function initBackupAndRestore() {
+  const btnExport = document.getElementById('btnExportBackup');
+  const btnImport = document.getElementById('btnImportBackup');
+  const fileInput = document.getElementById('backupFileInput');
+
+  if (btnExport) {
+    btnExport.addEventListener('click', () => {
+      exportMenuBackup();
+    });
+  }
+
+  if (btnImport && fileInput) {
+    btnImport.addEventListener('click', () => {
+      fileInput.value = '';
+      fileInput.click();
+    });
+
+    fileInput.addEventListener('change', (e) => {
+      const file = e.target.files && e.target.files[0];
+      if (!file) return;
+      importMenuBackup(file);
+    });
+  }
+}
+
+function exportMenuBackup() {
+  try {
+    const dataStr = JSON.stringify(currentMenu, null, 2);
+    const blob = new Blob([dataStr], { type: 'application/json' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    const today = new Date();
+    const dateStr = `${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2, '0')}-${String(today.getDate()).padStart(2, '0')}`;
+    a.href = url;
+    a.download = `zaman_menu_backup_${dateStr}.json`;
+    document.body.appendChild(a);
+    a.click();
+    setTimeout(() => {
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+    }, 150);
+    showToast('📥 Резервная копия меню успешно скачана!');
+  } catch (e) {
+    showToast('⚠️ Ошибка при создании резервной копии');
+  }
+}
+
+function importMenuBackup(file) {
+  const reader = new FileReader();
+  reader.onload = async (e) => {
+    try {
+      const parsed = JSON.parse(e.target.result);
+      if (!parsed || typeof parsed !== 'object' || Object.keys(parsed).length === 0) {
+        showToast('❌ Файл пуст или некорректен');
+        return;
+      }
+
+      const firstCatKey = Object.keys(parsed)[0];
+      if (!parsed[firstCatKey] || !parsed[firstCatKey].title) {
+        showToast('❌ Неверная структура файла меню');
+        return;
+      }
+
+      const countCats = Object.keys(parsed).length;
+      if (confirm(`Восстановить меню из файла «${file.name}»?\n\nВ файле найдено категорий: ${countCats}.\nТекущее меню будет полностью заменено и сохранено на сайте.`)) {
+        currentMenu = parsed;
+        localStorage.setItem('zaman_menu_cache', JSON.stringify(parsed));
+        if (typeof renderCategoriesList === 'function') renderCategoriesList();
+        renderCategoryFilters();
+        renderDishes();
+        updateStats();
+
+        const saved = await saveMenuToServer();
+        if (saved) {
+          showToast(`✅ Меню восстановлено: ${countCats} категорий загружено!`);
+        } else {
+          showToast('⚠️ Меню загружено в браузер, но ошибка сохранения на сервере');
+        }
+      }
+    } catch (err) {
+      showToast('❌ Ошибка чтения файла: некорректный JSON');
+    }
+  };
+  reader.readAsText(file);
 }
 
 async function saveMenuToServer(silent = false) {

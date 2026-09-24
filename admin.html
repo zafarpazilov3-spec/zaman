@@ -71,6 +71,13 @@
         <button type="button" class="admin-btn" id="btnSyncMenu" title="Загрузить свежие изменения с сервера">
           🔄 <span>Обновить</span>
         </button>
+        <button type="button" class="admin-btn" id="btnExportBackup" title="Скачать резервную копию меню (.json) на компьютер или телефон">
+          📥 <span>Скачать копию</span>
+        </button>
+        <button type="button" class="admin-btn" id="btnImportBackup" title="Восстановить меню из ранее скачанного файла .json">
+          📤 <span>Восстановить</span>
+        </button>
+        <input type="file" id="backupFileInput" accept=".json" style="display:none;">
         <button type="button" class="admin-btn" id="btnCopyAdminLink" title="Скопировать ссылку на админ-панель для друга">
           🔗 <span>Ссылка для друга</span>
         </button>
@@ -434,6 +441,6 @@
   <!-- Toast Notifications Container -->
   <div class="toast-container" id="toastContainer"></div>
 
-  <script src="js/admin.js?v=17"></script>
+  <script src="js/admin.js?v=18"></script>
 </body>
 </html>

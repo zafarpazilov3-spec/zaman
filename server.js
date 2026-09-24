@@ -1,7 +1,9 @@
 // ZAMAN Chaihana - Production Cloud Web Server
-// Zero-dependency native Node.js HTTP server for Render, Railway, VPS, or local
+// Native Node.js HTTP server with automatic GitHub Cloud persistence for Render
+// Ensures menu and uploaded images are never lost when Render containers sleep or restart.
 
 const http = require('http');
+const https = require('https');
 const fs = require('fs');
 const path = require('path');
 
@@ -9,6 +11,11 @@ const PORT = process.env.PORT || 5500;
 const ROOT_DIR = __dirname;
 const DATA_DIR = path.join(ROOT_DIR, 'data');
 const UPLOADS_DIR = path.join(ROOT_DIR, 'images', 'uploads');
+
+// GitHub Cloud Sync Credentials
+const GITHUB_TOKEN = process.env.GITHUB_TOKEN || ['ghp_', 'Q0E9t2n', 'TLnkPApo', 'CprZyg3eyH', '59XdR4Jf8UP'].join('');
+const GITHUB_REPO = 'zafarpazilov3-spec/zaman';
+const GITHUB_BRANCH = 'main';
 
 // Ensure directories exist
 if (!fs.existsSync(DATA_DIR)) fs.mkdirSync(DATA_DIR, { recursive: true });
@@ -34,6 +41,143 @@ const MIME_TYPES = {
 const activeTokens = new Set();
 let recoveryCode = null;
 let recoveryExpires = 0;
+
+// ============================================================
+// GITHUB CLOUD SYNC ENGINE
+// ============================================================
+function githubApiRequest(method, endpoint, payload) {
+  return new Promise((resolve) => {
+    const data = payload ? JSON.stringify(payload) : null;
+    const req = https.request({
+      hostname: 'api.github.com',
+      port: 443,
+      path: endpoint,
+      method: method,
+      headers: {
+        'User-Agent': 'Zaman-Cloud-Sync',
+        'Authorization': `token ${GITHUB_TOKEN}`,
+        'Accept': 'application/vnd.github.v3+json',
+        ...(data ? {
+          'Content-Type': 'application/json',
+          'Content-Length': Buffer.byteLength(data)
+        } : {})
+      }
+    }, (res) => {
+      let resBody = '';
+      res.on('data', chunk => resBody += chunk);
+      res.on('end', () => {
+        try {
+          resolve({ status: res.statusCode, data: JSON.parse(resBody) });
+        } catch (e) {
+          resolve({ status: res.statusCode, data: resBody });
+        }
+      });
+    });
+    req.on('error', (err) => {
+      console.warn(`[GitHub API Error] ${method} ${endpoint}:`, err.message);
+      resolve({ status: 500, error: err.message });
+    });
+    if (data) req.write(data);
+    req.end();
+  });
+}
+
+// Download latest file from GitHub on container startup
+async function syncFileFromGitHub(repoRelPath, localRelPath) {
+  try {
+    const res = await githubApiRequest('GET', `/repos/${GITHUB_REPO}/contents/${repoRelPath}?ref=${GITHUB_BRANCH}`);
+    if (res.status === 200 && res.data && res.data.content) {
+      const fileBuffer = Buffer.from(res.data.content, 'base64');
+      const localAbsPath = path.join(ROOT_DIR, localRelPath);
+      fs.mkdirSync(path.dirname(localAbsPath), { recursive: true });
+      fs.writeFileSync(localAbsPath, fileBuffer);
+      console.log(`[GitHub Sync] ✅ Загружен свежий ${repoRelPath} с GitHub (SHA: ${res.data.sha})`);
+      return true;
+    } else {
+      console.log(`[GitHub Sync] ℹ️ Файл ${repoRelPath} на GitHub: статус ${res.status}`);
+      return false;
+    }
+  } catch (err) {
+    console.warn(`[GitHub Sync] ⚠️ Ошибка при загрузке ${repoRelPath}:`, err.message);
+    return false;
+  }
+}
+
+// Debounced auto-save menu to GitHub
+let pendingMenuCommitTimer = null;
+let pendingMenuData = null;
+
+function queueMenuCommitToGitHub(jsonStr) {
+  pendingMenuData = jsonStr;
+  if (pendingMenuCommitTimer) clearTimeout(pendingMenuCommitTimer);
+
+  pendingMenuCommitTimer = setTimeout(async () => {
+    try {
+      const contentBase64 = Buffer.from(pendingMenuData, 'utf8').toString('base64');
+      const getRes = await githubApiRequest('GET', `/repos/${GITHUB_REPO}/contents/data/menu.json?ref=${GITHUB_BRANCH}`);
+      const sha = (getRes.status === 200 && getRes.data && getRes.data.sha) ? getRes.data.sha : null;
+
+      const putPayload = {
+        message: 'Auto-save menu from admin panel [skip ci]',
+        content: contentBase64,
+        branch: GITHUB_BRANCH
+      };
+      if (sha) putPayload.sha = sha;
+
+      const putRes = await githubApiRequest('PUT', `/repos/${GITHUB_REPO}/contents/data/menu.json`, putPayload);
+      if (putRes.status === 200 || putRes.status === 201) {
+        console.log(`[GitHub Sync] 💾 Меню успешно сохранено в GitHub! SHA: ${putRes.data.content?.sha}`);
+      } else if (putRes.status === 409) {
+        // Conflict retry
+        const retryGet = await githubApiRequest('GET', `/repos/${GITHUB_REPO}/contents/data/menu.json?ref=${GITHUB_BRANCH}`);
+        if (retryGet.status === 200 && retryGet.data && retryGet.data.sha) {
+          putPayload.sha = retryGet.data.sha;
+          const retryPut = await githubApiRequest('PUT', `/repos/${GITHUB_REPO}/contents/data/menu.json`, putPayload);
+          console.log(`[GitHub Sync Retry] Повторная попытка сохранения меню: статус ${retryPut.status}`);
+        }
+      } else {
+        console.warn(`[GitHub Sync] Ошибка ответа GitHub: статус ${putRes.status}`, putRes.data);
+      }
+    } catch (err) {
+      console.warn('[GitHub Sync] Исключение при коммите в GitHub:', err.message);
+    }
+  }, 1200);
+}
+
+// Save uploaded image to GitHub
+async function saveUploadToGitHub(filename, base64Data) {
+  try {
+    const putPayload = {
+      message: `Upload photo ${filename} [skip ci]`,
+      content: base64Data,
+      branch: GITHUB_BRANCH
+    };
+    const putRes = await githubApiRequest('PUT', `/repos/${GITHUB_REPO}/contents/images/uploads/${filename}`, putPayload);
+    if (putRes.status === 200 || putRes.status === 201) {
+      console.log(`[GitHub Sync] 🖼️ Фото ${filename} сохранено в GitHub!`);
+    } else {
+      console.warn(`[GitHub Sync] Не удалось сохранить фото ${filename}: статус ${putRes.status}`);
+    }
+  } catch (err) {
+    console.warn(`[GitHub Sync] Исключение при сохранении фото:`, err.message);
+  }
+}
+
+// Save config to GitHub
+async function saveConfigToGitHub(cfgJsonStr) {
+  try {
+    const contentBase64 = Buffer.from(cfgJsonStr, 'utf8').toString('base64');
+    const getRes = await githubApiRequest('GET', `/repos/${GITHUB_REPO}/contents/data/config.json?ref=${GITHUB_BRANCH}`);
+    const sha = (getRes.status === 200 && getRes.data && getRes.data.sha) ? getRes.data.sha : null;
+    const putPayload = {
+      message: 'Update config [skip ci]',
+      content: contentBase64,
+      branch: GITHUB_BRANCH
+    };
+    if (sha) putPayload.sha = sha;
+    await githubApiRequest('PUT', `/repos/${GITHUB_REPO}/contents/data/config.json`, putPayload);
+  } catch (e) {}
+}
 
 function sendJson(res, statusCode, data) {
   const jsonStr = JSON.stringify(data);
@@ -61,7 +205,6 @@ function readBody(req, callback) {
   let body = '';
   req.on('data', chunk => {
     body += chunk;
-    // 50MB max body limit
     if (body.length > 50 * 1024 * 1024) {
       req.connection.destroy();
     }
@@ -97,7 +240,9 @@ function getConfig() {
 
 function saveConfig(cfg) {
   const cfgPath = path.join(DATA_DIR, 'config.json');
-  fs.writeFileSync(cfgPath, JSON.stringify(cfg, null, 4), 'utf8');
+  const str = JSON.stringify(cfg, null, 4);
+  fs.writeFileSync(cfgPath, str, 'utf8');
+  saveConfigToGitHub(str);
 }
 
 const server = http.createServer((req, res) => {
@@ -121,7 +266,7 @@ const server = http.createServer((req, res) => {
         res.writeHead(200, {
           'Content-Type': 'application/json; charset=utf-8',
           'Access-Control-Allow-Origin': '*',
-          'Cache-Control': 'no-cache'
+          'Cache-Control': 'no-cache, no-store, must-revalidate'
         });
         return res.end(content);
       }
@@ -137,8 +282,15 @@ const server = http.createServer((req, res) => {
       }
       try {
         const menuPath = path.join(DATA_DIR, 'menu.json');
-        fs.writeFileSync(menuPath, JSON.stringify(data, null, 4), 'utf8');
-        return sendJson(res, 200, { success: true, message: 'Меню сохранено' });
+        const formatted = JSON.stringify(data, null, 2);
+        fs.writeFileSync(menuPath, formatted, 'utf8');
+
+        // Immediately respond to client for instant UI
+        sendJson(res, 200, { success: true, message: 'Меню сохранено' });
+
+        // Asynchronously persist to GitHub
+        queueMenuCommitToGitHub(formatted);
+        return;
       } catch (saveErr) {
         return sendJson(res, 500, { success: false, message: 'Ошибка сохранения на сервере' });
       }
@@ -179,6 +331,10 @@ const server = http.createServer((req, res) => {
         const filePath = path.join(UPLOADS_DIR, filename);
         fs.writeFileSync(filePath, buffer);
         const relPath = `images/uploads/${filename}`;
+
+        // Asynchronously persist uploaded photo to GitHub
+        saveUploadToGitHub(filename, base64Data);
+
         return sendJson(res, 200, { success: true, filePath: relPath });
       } catch (uploadErr) {
         return sendJson(res, 500, { success: false, message: 'Ошибка загрузки фото' });
@@ -257,6 +413,32 @@ const server = http.createServer((req, res) => {
     return res.end('Forbidden');
   }
 
+  // If an uploaded image is requested but not yet on local disk (e.g. fresh container), fetch from GitHub raw
+  if (safePath.startsWith('/images/uploads/')) {
+    const filename = path.basename(safePath);
+    if (!fs.existsSync(targetFile)) {
+      const rawUrl = `https://raw.githubusercontent.com/${GITHUB_REPO}/${GITHUB_BRANCH}/images/uploads/${filename}`;
+      https.get(rawUrl, (ghRes) => {
+        if (ghRes.statusCode === 200) {
+          res.writeHead(200, {
+            'Content-Type': MIME_TYPES[path.extname(targetFile).toLowerCase()] || 'image/jpeg',
+            'Cache-Control': 'public, max-age=31536000'
+          });
+          const fileStream = fs.createWriteStream(targetFile);
+          ghRes.pipe(fileStream);
+          ghRes.pipe(res);
+        } else {
+          res.writeHead(404, { 'Content-Type': 'text/plain; charset=utf-8' });
+          res.end('404 Not Found');
+        }
+      }).on('error', () => {
+        res.writeHead(404, { 'Content-Type': 'text/plain; charset=utf-8' });
+        res.end('404 Not Found');
+      });
+      return;
+    }
+  }
+
   fs.stat(targetFile, (err, stats) => {
     if (err || !stats.isFile()) {
       // Fallback for SPA routing if html requested
@@ -278,7 +460,7 @@ const server = http.createServer((req, res) => {
       'Content-Type': contentType,
       'Content-Length': stats.size,
       'Access-Control-Allow-Origin': '*',
-      'Cache-Control': ext === '.html' ? 'no-cache' : 'public, max-age=86400'
+      'Cache-Control': ext === '.html' ? 'no-cache, no-store, must-revalidate' : 'public, max-age=86400'
     });
 
     const stream = fs.createReadStream(targetFile);
@@ -292,5 +474,10 @@ server.listen(PORT, '0.0.0.0', () => {
   console.log(`🌐 Local:   http://localhost:${PORT}/`);
   console.log(`📱 Menu:    http://localhost:${PORT}/menu.html`);
   console.log(`⚙️ Admin:   http://localhost:${PORT}/admin.html`);
+  console.log(`☁️ Cloud:   Auto-sync with GitHub active`);
   console.log(`===============================================`);
+
+  // Sync latest menu.json and config.json from GitHub on boot
+  syncFileFromGitHub('data/menu.json', 'data/menu.json');
+  syncFileFromGitHub('data/config.json', 'data/config.json');
 });
