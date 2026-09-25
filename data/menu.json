@@ -1585,6 +1585,16 @@
     "thumb": "images/salads/thumb.jpg",
     "dishes": [
       {
+        "id": "limonades-2386",
+        "name": "Граната клубника",
+        "price": 200,
+        "desc": "",
+        "image": "images/uploads/dish_1790364859176_228.jpg",
+        "available": true,
+        "priceSmall": 200,
+        "priceBig": 390
+      },
+      {
         "id": "limonades-5477",
         "name": "Персик манго",
         "price": 190,
@@ -1673,16 +1683,6 @@
     "href": "limonades.html",
     "thumb": "images/salads/thumb.jpg",
     "dishes": [
-      {
-        "id": "limonades-2386",
-        "name": "Граната клубника",
-        "price": 200,
-        "desc": "",
-        "image": "images/salads/dish-1.jpg",
-        "available": true,
-        "priceSmall": 200,
-        "priceBig": 390
-      },
       {
         "id": "limonades-1038",
         "name": "Апельсин клубника",
