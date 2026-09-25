@@ -1585,6 +1585,16 @@
     "thumb": "images/salads/thumb.jpg",
     "dishes": [
       {
+        "id": "limonades-8334",
+        "name": "Лимонад ZAMAN",
+        "price": 190,
+        "desc": "",
+        "image": "images/uploads/dish_1790364908041_661.jpg",
+        "available": true,
+        "priceSmall": 190,
+        "priceBig": 380
+      },
+      {
         "id": "limonades-6722",
         "name": "Груша маракуя",
         "price": 180,
@@ -1712,18 +1722,7 @@
     "page": "30",
     "href": "limonades.html",
     "thumb": "images/salads/thumb.jpg",
-    "dishes": [
-      {
-        "id": "limonades-8334",
-        "name": "Лимонад ZAMAN",
-        "price": 190,
-        "desc": "",
-        "image": "images/salads/dish-1.jpg",
-        "available": true,
-        "priceSmall": 190,
-        "priceBig": 380
-      }
-    ]
+    "dishes": []
   },
   "smoothie": {
     "title": "СМУЗИ",
