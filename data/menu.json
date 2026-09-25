@@ -1724,14 +1724,6 @@
     "thumb": "images/salads/thumb.jpg",
     "dishes": [
       {
-        "id": "smoothie-3441",
-        "name": "Ягодный микс",
-        "price": 220,
-        "desc": "",
-        "image": "images/uploads/dish_1790365134602_622.jpg",
-        "available": true
-      },
-      {
         "id": "smoothie-7516",
         "name": "Ягодно банановый",
         "price": 230,
@@ -1756,6 +1748,14 @@
     "href": "milkshake.html",
     "thumb": "images/salads/thumb.jpg",
     "dishes": [
+      {
+        "id": "smoothie-3441",
+        "name": "Ягодный микс",
+        "price": 220,
+        "desc": "",
+        "image": "images/uploads/dish_1790365134602_622.jpg",
+        "available": true
+      },
       {
         "id": "smoothie-8924",
         "name": "Банан киви",
