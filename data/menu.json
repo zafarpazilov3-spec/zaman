@@ -1585,6 +1585,16 @@
     "thumb": "images/salads/thumb.jpg",
     "dishes": [
       {
+        "id": "limonades-9530",
+        "name": "Яблоко киви",
+        "price": 180,
+        "desc": "",
+        "image": "images/uploads/dish_1790364883351_577.jpg",
+        "available": true,
+        "priceSmall": 180,
+        "priceBig": 355
+      },
+      {
         "id": "limonades-1038",
         "name": "Апельсин клубника",
         "price": 190,
@@ -1693,16 +1703,6 @@
     "href": "limonades.html",
     "thumb": "images/salads/thumb.jpg",
     "dishes": [
-      {
-        "id": "limonades-9530",
-        "name": "Яблоко киви",
-        "price": 180,
-        "desc": "",
-        "image": "images/salads/dish-1.jpg",
-        "available": true,
-        "priceSmall": 180,
-        "priceBig": 355
-      },
       {
         "id": "limonades-6722",
         "name": "Груша маракуя",
