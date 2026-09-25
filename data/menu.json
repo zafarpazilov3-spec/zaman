@@ -1395,7 +1395,7 @@
       },
       {
         "id": "desserts-2",
-        "name": "Чизкейк с лесными ягодами",
+        "name": "Чизкейк с л��сными ягодами",
         "available": true,
         "price": 320,
         "image": "images/desserts/dish-2.jpg",
@@ -1546,7 +1546,7 @@
         "name": "Фирменный чай яблочная карамель",
         "available": true,
         "price": 250,
-        "image": "images/tea/dish-1.jpg",
+        "image": "images/uploads/dish_1790364152078_484.jpg",
         "desc": ""
       },
       {
