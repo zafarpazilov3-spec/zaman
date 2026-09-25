@@ -1395,7 +1395,7 @@
       },
       {
         "id": "desserts-2",
-        "name": "Чизкейк с л��сными ягодами",
+        "name": "Чизкейк с лесными ягодами",
         "available": true,
         "price": 320,
         "image": "images/desserts/dish-2.jpg",
@@ -1554,7 +1554,7 @@
         "name": "Манго маракуя чай",
         "available": true,
         "price": 230,
-        "image": "images/tea/dish-2.jpg",
+        "image": "images/uploads/dish_1790364165051_352.jpg",
         "desc": ""
       },
       {
