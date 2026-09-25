@@ -895,7 +895,7 @@
         "available": true,
         "price": 270,
         "image": "images/uploads/dish_1790113842625.jpg",
-        "desc": "Булочка , говяжья котлета, сыр чеддер, с��ус для бургера, золотая айсберг, помидор, огурец"
+        "desc": "Булочка , говяжья котлета, сыр чеддер, соус для бургера, золотая айсберг, помидор, огурец"
       },
       {
         "id": "burgers-5",
@@ -1512,7 +1512,7 @@
         "name": "Rc-Cola",
         "price": 100,
         "desc": "",
-        "image": "images/salads/dish-1.jpg",
+        "image": "images/uploads/dish_1790364078202_372.jpg",
         "available": true
       },
       {
