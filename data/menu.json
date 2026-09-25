@@ -1724,14 +1724,6 @@
     "thumb": "images/salads/thumb.jpg",
     "dishes": [
       {
-        "id": "smoothie-8924",
-        "name": "Банан киви",
-        "price": 220,
-        "desc": "",
-        "image": "images/salads/dish-1.jpg",
-        "available": true
-      },
-      {
         "id": "smoothie-3441",
         "name": "Ягодный микс",
         "price": 220,
@@ -1764,6 +1756,14 @@
     "href": "milkshake.html",
     "thumb": "images/salads/thumb.jpg",
     "dishes": [
+      {
+        "id": "smoothie-8924",
+        "name": "Банан киви",
+        "price": 220,
+        "desc": "",
+        "image": "images/uploads/dish_1790365120477_571.jpg",
+        "available": true
+      },
       {
         "id": "milkshake-5445",
         "name": "Сникерс",
