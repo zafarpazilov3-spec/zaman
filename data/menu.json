@@ -1724,14 +1724,6 @@
     "thumb": "images/salads/thumb.jpg",
     "dishes": [
       {
-        "id": "smoothie-7516",
-        "name": "Ягодно банановый",
-        "price": 230,
-        "desc": "",
-        "image": "images/uploads/dish_1790365154033_897.jpg",
-        "available": true
-      },
-      {
         "id": "smoothie-4298",
         "name": "Морковно апельсиновый смузи",
         "price": 230,
@@ -1748,6 +1740,14 @@
     "href": "milkshake.html",
     "thumb": "images/salads/thumb.jpg",
     "dishes": [
+      {
+        "id": "smoothie-7516",
+        "name": "Ягодно банановый",
+        "price": 230,
+        "desc": "",
+        "image": "images/uploads/dish_1790365154033_897.jpg",
+        "available": true
+      },
       {
         "id": "smoothie-3441",
         "name": "Ягодный микс",
