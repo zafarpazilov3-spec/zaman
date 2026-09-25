@@ -1716,14 +1716,6 @@
       }
     ]
   },
-  "limonades": {
-    "title": "АВТОРСКИЕ ЛИМОНАДЫ",
-    "titleEn": "LIMONADES",
-    "page": "30",
-    "href": "limonades.html",
-    "thumb": "images/salads/thumb.jpg",
-    "dishes": []
-  },
   "smoothie": {
     "title": "СМУЗИ",
     "titleEn": "SMOOTHIE",
