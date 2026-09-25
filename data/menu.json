@@ -395,7 +395,7 @@
         "available": true,
         "price": 470,
         "image": "images/uploads/dish_1790100494320.jpg",
-        "desc": "куриное бедро, помидор, грибы, кокосово сливочный соус, рис отварной, черри помидор, лимон."
+        "desc": "куриное бедро, помидор, грибы, кокосово сливо��ный соус, рис отварной, черри помидор, лимон."
       },
       {
         "id": "hot-12",
@@ -1724,6 +1724,14 @@
     "thumb": "images/salads/thumb.jpg",
     "dishes": [
       {
+        "id": "cocktails-4525",
+        "name": "Ананасовый вулкан",
+        "price": 250,
+        "desc": "",
+        "image": "images/uploads/dish_1790365226998_393.jpg",
+        "available": true
+      },
+      {
         "id": "cocktails-7449",
         "name": "Персиковый закат",
         "price": 250,
@@ -1820,14 +1828,6 @@
     "href": "cocktails.html",
     "thumb": "images/salads/thumb.jpg",
     "dishes": [
-      {
-        "id": "cocktails-4525",
-        "name": "Ананасовый вулкан",
-        "price": 250,
-        "desc": "",
-        "image": "images/salads/dish-1.jpg",
-        "available": true
-      },
       {
         "id": "cocktails-2736",
         "name": "Кокосовый рай",
