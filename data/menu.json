@@ -1585,6 +1585,16 @@
     "thumb": "images/salads/thumb.jpg",
     "dishes": [
       {
+        "id": "limonades-5477",
+        "name": "Персик манго",
+        "price": 190,
+        "desc": "",
+        "image": "images/uploads/dish_1790364845609_138.jpg",
+        "available": true,
+        "priceSmall": 190,
+        "priceBig": 380
+      },
+      {
         "id": "limonades-9037",
         "name": "Манго маракуя",
         "price": 200,
@@ -1663,16 +1673,6 @@
     "href": "limonades.html",
     "thumb": "images/salads/thumb.jpg",
     "dishes": [
-      {
-        "id": "limonades-5477",
-        "name": "Персик манго",
-        "price": 190,
-        "desc": "",
-        "image": "images/salads/dish-1.jpg",
-        "available": true,
-        "priceSmall": 190,
-        "priceBig": 380
-      },
       {
         "id": "limonades-2386",
         "name": "Граната клубника",
