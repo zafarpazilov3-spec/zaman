@@ -104,7 +104,7 @@
       },
       {
         "id": "salads-3",
-        "name": "Тайский салат",
+        "name": "Тай��кий салат",
         "available": true,
         "price": 365,
         "image": "images/uploads/dish_1790074229831.jpg",
@@ -848,7 +848,7 @@
       },
       {
         "id": "pizza-16",
-        "name": "Пицца Ассорти",
+        "name": "Пи��ца Ассорти",
         "available": true,
         "price": 370,
         "priceSmall": 370,
