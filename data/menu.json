@@ -888,7 +888,7 @@
         "available": true,
         "price": 390,
         "image": "images/uploads/dish_1790113702950.jpg",
-        "desc": "булочка, соус для бургера, куриные котлеты говяжьи котлеты, золотая айсберг, помидоры, огурец, сырный соус."
+        "desc": "булочка, соус для бургера, куриные котлеты говяжьи котлеты, золот��я айсберг, помидоры, огурец, сырный соус."
       },
       {
         "id": "burgers-3",
@@ -1040,7 +1040,7 @@
     "title": "РОЛЛЫ И СУШИ",
     "titleEn": "ROLLS & SUSHI",
     "href": "rolls.html",
-    "thumb": "images/dishes/rolls_filadelfiya.jpg",
+    "thumb": "images/uploads/dish_1790366382573_737.jpg",
     "dishes": [
       {
         "id": "rolls-1",
