@@ -848,7 +848,7 @@
       },
       {
         "id": "pizza-16",
-        "name": "Пи��ца Ассорти",
+        "name": "Пицца Ассорти",
         "available": true,
         "price": 370,
         "priceSmall": 370,
@@ -1376,7 +1376,7 @@
         "available": true,
         "price": 900,
         "image": "images/uploads/dish_1790116556171.jpg",
-        "desc": "Цельная свежая рыба дорадо, запеченная на гриле с лимоном, тимьяном и морской сол��ю"
+        "desc": "Цельная свежая рыба дорадо, запеченная на гриле с лимоном, тимьяном и морской солью"
       },
       {
         "id": "grill-14",
@@ -1393,7 +1393,7 @@
     "title": "НАПИТКИ",
     "titleEn": "BEVERAGES",
     "href": "drinks.html",
-    "thumb": "images/drinks/thumb.jpg",
+    "thumb": "images/uploads/dish_1790366418694_962.jpg",
     "dishes": [
       {
         "id": "drinks-4115",
