@@ -1332,62 +1332,6 @@
     ],
     "page": ""
   },
-  "desserts": {
-    "title": "ДЕСЕРТЫ",
-    "titleEn": "DESSERTS",
-    "href": "desserts.html",
-    "thumb": "images/desserts/thumb.jpg",
-    "dishes": [
-      {
-        "id": "desserts-1",
-        "name": "Пахлава бакинская",
-        "available": true,
-        "price": 220,
-        "image": "images/desserts/dish-1.jpg",
-        "desc": "Многослойная медовая выпечка с грецким орехом и кардамоном"
-      },
-      {
-        "id": "desserts-2",
-        "name": "Чизкейк с лесными ягодами",
-        "available": true,
-        "price": 320,
-        "image": "images/desserts/dish-2.jpg",
-        "desc": "Нежная сливочно-сырная основа с соусом из лесных ягод"
-      },
-      {
-        "id": "desserts-3",
-        "name": "Фруктовое ассорти",
-        "available": true,
-        "price": 240,
-        "image": "images/desserts/dish-3.jpg",
-        "desc": "Свежие сезонные фрукты с натуральным горным мёдом"
-      },
-      {
-        "id": "desserts-4",
-        "name": "Мороженое крафтовое",
-        "available": true,
-        "price": 180,
-        "image": "images/desserts/dish-4.jpg",
-        "desc": "Три шарика пломбира с дроблёными фисташками и шоколадом"
-      },
-      {
-        "id": "desserts-5",
-        "name": "Тирамису классический",
-        "available": true,
-        "price": 330,
-        "image": "images/desserts/dish-5.jpg",
-        "desc": "Итальянское печенье савоярди с кофейной пропиткой и маскарпоне"
-      },
-      {
-        "id": "desserts-6",
-        "name": "Восточные сладости к чаю",
-        "available": true,
-        "price": 150,
-        "image": "images/desserts/dish-6.jpg",
-        "desc": "Медовый чак-чак, фисташковая халва и рахат-лукум"
-      }
-    ]
-  },
   "drinks": {
     "title": "НАПИТКИ",
     "titleEn": "BEVERAGES",
