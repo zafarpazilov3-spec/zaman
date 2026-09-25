@@ -1716,14 +1716,6 @@
       }
     ]
   },
-  "smoothie": {
-    "title": "СМУЗИ",
-    "titleEn": "SMOOTHIE",
-    "page": "32",
-    "href": "smoothie.html",
-    "thumb": "images/salads/thumb.jpg",
-    "dishes": []
-  },
   "milkshake": {
     "title": "МИЛКШЕЙКИ",
     "titleEn": "MILKSHAKE",
