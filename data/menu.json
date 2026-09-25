@@ -239,14 +239,6 @@
         "desc": "Традиционный острый салат из помидоров с тонким луком и перцем чили"
       },
       {
-        "id": "salads-6035",
-        "name": "Fanta (стекло)",
-        "price": 100,
-        "desc": "",
-        "image": "images/salads/dish-1.jpg",
-        "available": true
-      },
-      {
         "id": "salads-3051",
         "name": "Rc-Cola",
         "price": 100,
