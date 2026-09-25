@@ -29,6 +29,14 @@
         "desc": "",
         "image": "images/uploads/dish_1790365607681_851.jpg",
         "available": true
+      },
+      {
+        "id": "breakfast-2785",
+        "name": "Шакшука с хлебом",
+        "price": 270,
+        "desc": "",
+        "image": "images/uploads/dish_1790365642709_573.jpg",
+        "available": true
       }
     ]
   },
@@ -364,7 +372,7 @@
         "available": true,
         "price": 540,
         "image": "images/uploads/dish_1790099947774.jpg",
-        "desc": "говядина, микс перцев, помидор, пачатки, соус, рис отварной."
+        "desc": "говяди��а, микс перцев, помидор, пачатки, соус, рис отварной."
       },
       {
         "id": "hot-4",
