@@ -1,4 +1,12 @@
 {
+  "breakfast": {
+    "title": "ЗАВТРАКИ",
+    "titleEn": "BREAKFAST",
+    "page": "1",
+    "href": "breakfast.html",
+    "thumb": "images/uploads/dish_1790365338266_677.jpg",
+    "dishes": []
+  },
   "salads": {
     "title": "САЛАТЫ",
     "titleEn": "SALADS",
@@ -355,7 +363,7 @@
         "available": true,
         "price": 540,
         "image": "images/uploads/dish_1790100117273.jpg",
-        "desc": "говяжий фарш, два вида сыра, грибной соус, картошка по домашнему, салат коул слоу."
+        "desc": "говяжий фарш, два вида сыра, грибной с��ус, картошка по домашнему, салат коул слоу."
       },
       {
         "id": "hot-7",
@@ -1780,13 +1788,5 @@
         "available": true
       }
     ]
-  },
-  "breakfast": {
-    "title": "ЗАВТРАКИ",
-    "titleEn": "BREAKFAST",
-    "page": "1",
-    "href": "breakfast.html",
-    "thumb": "images/uploads/dish_1790365338266_677.jpg",
-    "dishes": []
   }
 }
