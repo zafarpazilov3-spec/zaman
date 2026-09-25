@@ -1585,6 +1585,16 @@
     "thumb": "images/salads/thumb.jpg",
     "dishes": [
       {
+        "id": "limonades-1038",
+        "name": "Апельсин клубника",
+        "price": 190,
+        "desc": "",
+        "image": "images/uploads/dish_1790364871048_764.jpg",
+        "available": true,
+        "priceSmall": 190,
+        "priceBig": 380
+      },
+      {
         "id": "limonades-2386",
         "name": "Граната клубника",
         "price": 200,
@@ -1683,16 +1693,6 @@
     "href": "limonades.html",
     "thumb": "images/salads/thumb.jpg",
     "dishes": [
-      {
-        "id": "limonades-1038",
-        "name": "Апельсин клубника",
-        "price": 190,
-        "desc": "",
-        "image": "images/salads/dish-1.jpg",
-        "available": true,
-        "priceSmall": 190,
-        "priceBig": 380
-      },
       {
         "id": "limonades-9530",
         "name": "Яблоко киви",
