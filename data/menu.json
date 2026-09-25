@@ -1780,5 +1780,13 @@
         "available": true
       }
     ]
+  },
+  "breakfast": {
+    "title": "ЗАВТРАКИ",
+    "titleEn": "BREAKFAST",
+    "page": "1",
+    "href": "breakfast.html",
+    "thumb": "images/uploads/dish_1790365338266_677.jpg",
+    "dishes": []
   }
 }
