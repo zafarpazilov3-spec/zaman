@@ -380,7 +380,7 @@
         "available": true,
         "price": 420,
         "image": "images/uploads/dish_1790099884468.jpg",
-        "desc": "куриное филе, грибы, сливочный соус, рис отварной."
+        "desc": "кури��ое филе, грибы, сливочный соус, рис отварной."
       },
       {
         "id": "hot-3",
@@ -636,7 +636,7 @@
     "title": "ПАСТА И ВОК",
     "titleEn": "PASTA & WOK",
     "href": "pasta.html",
-    "thumb": "images/dishes/pasta_slivochnaya_kuritsa.jpg",
+    "thumb": "images/uploads/dish_1790366347962_326.jpg",
     "dishes": [
       {
         "id": "pasta-2",
