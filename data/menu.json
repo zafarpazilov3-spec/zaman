@@ -21,6 +21,14 @@
         "desc": "Драники, яйца пашот, микс салат, чесночный соус, печеный перец, соус голландез.",
         "image": "images/uploads/dish_1790365569913_174.jpg",
         "available": true
+      },
+      {
+        "id": "breakfast-7790",
+        "name": "Драники с хрустящей курицей",
+        "price": 320,
+        "desc": "",
+        "image": "images/uploads/dish_1790365607681_851.jpg",
+        "available": true
       }
     ]
   },
