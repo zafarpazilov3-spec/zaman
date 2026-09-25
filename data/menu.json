@@ -888,7 +888,7 @@
         "available": true,
         "price": 390,
         "image": "images/uploads/dish_1790113702950.jpg",
-        "desc": "булочка, соус для бургера, куриные котлеты говяжьи котлеты, золотая айсберг, помидоры, огурец, сырный соус."
+        "desc": "булочка, соус для бургера, куриные котлеты говяжьи котлеты, золот��я айсберг, помидоры, огурец, сырный соус."
       },
       {
         "id": "burgers-3",
@@ -1722,7 +1722,7 @@
     "titleEn": "MILKSHAKE",
     "page": "34",
     "href": "milkshake.html",
-    "thumb": "images/salads/thumb.jpg",
+    "thumb": "images/uploads/dish_1790366452853_0.jpg",
     "dishes": [
       {
         "id": "cocktails-4975",
