@@ -76,7 +76,7 @@
         "price": 0,
         "desc": "яйца, тостовый хлеб, курица, сыр чеддер, помидор, огурец, лист салата.",
         "image": "images/uploads/dish_1790366069881_663.jpg",
-        "available": true
+        "available": false
       }
     ]
   },
