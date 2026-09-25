@@ -380,7 +380,7 @@
         "available": true,
         "price": 420,
         "image": "images/uploads/dish_1790099884468.jpg",
-        "desc": "кури��ое филе, грибы, сливочный соус, рис отварной."
+        "desc": "куриное филе, грибы, сливочный соус, рис отварной."
       },
       {
         "id": "hot-3",
@@ -700,7 +700,7 @@
     "title": "ПИЦЦА И ПИДЕ",
     "titleEn": "PIZZA & PIDE",
     "href": "pizza.html",
-    "thumb": "images/dishes/pizza_pepperoni.jpg",
+    "thumb": "images/uploads/dish_1790366354799_737.jpg",
     "dishes": [
       {
         "id": "pizza-1",
