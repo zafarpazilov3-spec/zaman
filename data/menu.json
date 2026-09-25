@@ -1836,13 +1836,5 @@
         "available": true
       }
     ]
-  },
-  "cocktails": {
-    "title": "КОКТЕЙЛИ",
-    "titleEn": "COCKTAILS",
-    "page": "36",
-    "href": "cocktails.html",
-    "thumb": "images/salads/thumb.jpg",
-    "dishes": []
   }
 }
