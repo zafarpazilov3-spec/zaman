@@ -103,7 +103,7 @@
       },
       {
         "id": "salads-13",
-        "name": "Хрустящие баклажаны с кре��етками",
+        "name": "Хрустящие баклажаны с креветками",
         "available": true,
         "price": 350,
         "image": "images/uploads/dish_1790074784949.jpg",
@@ -895,7 +895,7 @@
         "available": true,
         "price": 270,
         "image": "images/uploads/dish_1790113842625.jpg",
-        "desc": "Булочка , говяжья котлета, сыр чеддер, соус для бургера, золотая айсберг, помидор, огурец"
+        "desc": "Булочка , говяжья котлета, сыр чеддер, с��ус для бургера, золотая айсберг, помидор, огурец"
       },
       {
         "id": "burgers-5",
@@ -1605,7 +1605,16 @@
     "page": "26",
     "href": "cooked-to-order.html",
     "thumb": "images/salads/thumb.jpg",
-    "dishes": []
+    "dishes": [
+      {
+        "id": "cooked-to-order-5259",
+        "name": "Плов ташкентский 1кг",
+        "price": 3500,
+        "desc": "",
+        "image": "images/uploads/dish_1790364705188_58.jpg",
+        "available": true
+      }
+    ]
   },
   "mojito": {
     "title": "МОХИТО",
