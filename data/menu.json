@@ -61,6 +61,14 @@
         "desc": "творог 9%,кокосовая мука, сметана, вишневое варенье",
         "image": "images/uploads/dish_1790365960283_790.jpg",
         "available": true
+      },
+      {
+        "id": "breakfast-3089",
+        "name": "Скрембл с креветками",
+        "price": 0,
+        "desc": "яйца, креветки, микс салат ,овощной салат, печеные черри.",
+        "image": "images/uploads/dish_1790366013025_835.jpg",
+        "available": true
       }
     ]
   },
@@ -352,7 +360,7 @@
       },
       {
         "id": "soups-12",
-        "name": "Мастава из ��овядины",
+        "name": "Мастава из говядины",
         "available": true,
         "price": 270,
         "image": "images/uploads/dish_1790099582983.jpg",
