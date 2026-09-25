@@ -1724,6 +1724,14 @@
     "thumb": "images/salads/thumb.jpg",
     "dishes": [
       {
+        "id": "cocktails-6579",
+        "name": "Клубничный бриз",
+        "price": 250,
+        "desc": "",
+        "image": "images/uploads/dish_1790365192409_910.jpg",
+        "available": true
+      },
+      {
         "id": "smoothie-4298",
         "name": "Морковно апельсиновый смузи",
         "price": 230,
@@ -1804,14 +1812,6 @@
     "href": "cocktails.html",
     "thumb": "images/salads/thumb.jpg",
     "dishes": [
-      {
-        "id": "cocktails-6579",
-        "name": "Клубничный бриз",
-        "price": 250,
-        "desc": "",
-        "image": "images/salads/dish-1.jpg",
-        "available": true
-      },
       {
         "id": "cocktails-7449",
         "name": "Персиковый закат",
