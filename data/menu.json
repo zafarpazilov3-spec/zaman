@@ -1212,7 +1212,7 @@
     ]
   },
   "grill": {
-    "title": "ШАШЛЫК И ГРИЛЬ",
+    "title": "ШАШЛЫК И СТЕЙКИ",
     "titleEn": "GRILL & BBQ",
     "href": "grill.html",
     "thumb": "images/dishes/grill_shashlyk_baranina.jpg",
@@ -1329,7 +1329,8 @@
         "image": "images/uploads/dish_1790116595545.jpg",
         "desc": "Нежный стейк атлантического лосося на углях с лимоном и свежей зеленью"
       }
-    ]
+    ],
+    "page": ""
   },
   "desserts": {
     "title": "ДЕСЕРТЫ",
