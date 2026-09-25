@@ -136,7 +136,17 @@ async function syncMenuData() {
     } catch (e) {}
   }
 
-  // 3. Apply data if loaded
+  // 3. Fallback to GitHub Raw CDN (super-fast, 100% uptime, immune to Render sleep)
+  if (!loadedData || typeof loadedData !== 'object' || Object.keys(loadedData).length === 0) {
+    try {
+      const res = await fetch('https://raw.githubusercontent.com/zafarpazilov3-spec/zaman/main/data/menu.json?t=' + Date.now());
+      if (res.ok) {
+        loadedData = await res.json();
+      }
+    } catch (e) {}
+  }
+
+  // 4. Apply data if loaded
   if (loadedData && typeof loadedData === 'object' && Object.keys(loadedData).length > 0) {
     ACTIVE_MENU = loadedData;
     const catKeys = Object.keys(loadedData);
