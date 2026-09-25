@@ -83,7 +83,7 @@
         "available": true,
         "price": 290,
         "image": "images/uploads/dish_1790074651239.jpg",
-        "desc": "Куриное филе, грибы, сливки, помидор, огурец, микс салат."
+        "desc": "Куриное филе, грибы, сли��ки, помидор, огурец, микс салат."
       },
       {
         "id": "salads-11",
@@ -103,7 +103,7 @@
       },
       {
         "id": "salads-13",
-        "name": "Хрустящие баклажаны с креветками",
+        "name": "Хрустящие баклажаны с кре��етками",
         "available": true,
         "price": 350,
         "image": "images/uploads/dish_1790074784949.jpg",
@@ -395,7 +395,7 @@
         "available": true,
         "price": 470,
         "image": "images/uploads/dish_1790100494320.jpg",
-        "desc": "куриное бедро, помидор, грибы, кокосово сливо��ный соус, рис отварной, черри помидор, лимон."
+        "desc": "куриное бедро, помидор, грибы, кокосово сливочный соус, рис отварной, черри помидор, лимон."
       },
       {
         "id": "hot-12",
@@ -1724,6 +1724,14 @@
     "thumb": "images/salads/thumb.jpg",
     "dishes": [
       {
+        "id": "cocktails-2736",
+        "name": "Кокосовый рай",
+        "price": 250,
+        "desc": "",
+        "image": "images/uploads/dish_1790365239943_39.jpg",
+        "available": true
+      },
+      {
         "id": "cocktails-4525",
         "name": "Ананасовый вулкан",
         "price": 250,
@@ -1828,14 +1836,6 @@
     "href": "cocktails.html",
     "thumb": "images/salads/thumb.jpg",
     "dishes": [
-      {
-        "id": "cocktails-2736",
-        "name": "Кокосовый рай",
-        "price": 250,
-        "desc": "",
-        "image": "images/salads/dish-1.jpg",
-        "available": true
-      },
       {
         "id": "cocktails-4975",
         "name": "Груша карамель",
